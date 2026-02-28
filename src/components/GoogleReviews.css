@@ -1,0 +1,287 @@
+/* ===== Google Reviews Section ===== */
+.gr-section {
+    padding: 5rem 0;
+    background: var(--bg-white);
+    overflow: hidden;
+}
+
+.gr-section .section-header h2 {
+    font-size: 34px;
+    margin-bottom: 2.5rem;
+}
+
+/* Layout: summary badge left + cards right — full viewport width */
+.gr-layout {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    padding-left: max(1rem, calc((70vw - 1200px) / 2));
+}
+
+/* ===== Left Summary Badge ===== */
+.gr-summary {
+    flex-shrink: 0;
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0.5rem 0;
+}
+
+.gr-label {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #0C0C0C;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.5rem;
+}
+
+.gr-summary-stars {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 0.6rem;
+}
+
+.gr-summary-stars .gr-star {
+    font-size: 1.4rem;
+    color: #f4b400;
+}
+
+.gr-based {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0 0 0.75rem;
+}
+
+.gr-based strong {
+    color: #0C0C0C;
+    text-decoration: underline;
+}
+
+.gr-google-logo {
+    width: 80px;
+    height: auto;
+}
+
+/* ===== Cards Container ===== */
+.gr-cards {
+    display: flex;
+    gap: 1rem;
+    flex: 1;
+    min-width: 0;
+    padding-right: 1.5rem;
+}
+
+/* ===== Individual Review Card ===== */
+.gr-card {
+    flex: 1 1 0;
+    min-width: 0;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    background: rgba(45, 45, 45, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 1.25rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gr-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* Card Header: avatar + name/date + Google icon */
+.gr-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.gr-card-avatar-wrap {
+    flex-shrink: 0;
+}
+
+.gr-card-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gr-card-avatar-initial {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.gr-card-meta {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.gr-card-name {
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.gr-card-date {
+    color: #999;
+    font-size: 0.8rem;
+}
+
+.gr-card-g {
+    width: 26px;
+    height: 26px;
+    flex-shrink: 0;
+    border-radius: 50%;
+}
+
+/* Stars row inside card */
+.gr-card-stars {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.gr-card-stars .gr-star {
+    font-size: 1rem;
+    color: #f4b400;
+}
+
+.gr-card-stars .gr-star-empty {
+    color: #666;
+}
+
+.gr-verified {
+    color: #4285F4;
+    font-size: 1rem;
+    margin-left: 4px;
+}
+
+/* Review text */
+.gr-card-text {
+    color: #e0e0e0;
+    font-size: 0.92rem;
+    line-height: 1.65;
+    margin: 0;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.gr-read-more {
+    color: #90caf9;
+    font-size: 0.82rem;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.gr-read-more:hover {
+    text-decoration: underline;
+}
+
+/* ===== CTA button below reviews ===== */
+.gr-cta-wrap {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .gr-section {
+        padding: 3.5rem 0;
+    }
+
+    .gr-section .section-header h2 {
+        font-size: 24px;
+        margin-bottom: 1.5rem;
+    }
+
+    .gr-layout {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        width: 100%;
+        margin-left: 0;
+        padding-left: 1rem;
+        padding-right: 0;
+    }
+
+    .gr-summary {
+        width: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem 1rem;
+        padding: 1rem;
+    }
+
+    .gr-label {
+        width: 100%;
+    }
+
+    .gr-summary-stars {
+        margin-bottom: 0;
+    }
+
+    .gr-based {
+        margin: 0;
+    }
+
+    .gr-cards {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+        padding-right: 1rem;
+    }
+
+    .gr-cards::-webkit-scrollbar {
+        height: 3px;
+    }
+
+    .gr-cards::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 3px;
+    }
+
+    .gr-card {
+        flex: 0 0 220px;
+        min-width: 220px;
+        scroll-snap-align: start;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .gr-layout {
+        padding-left: 1.5rem;
+    }
+
+    .gr-cards {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-right: 1.5rem;
+    }
+
+    .gr-card {
+        flex: 0 0 190px;
+        min-width: 190px;
+    }
+}

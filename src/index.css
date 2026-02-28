@@ -206,6 +206,7 @@ img {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  min-height: 44px;
 }
 
 .btn:hover {
@@ -343,6 +344,14 @@ img {
 .section-header.text-center p {
   margin-left: auto;
   margin-right: auto;
+}
+
+.section-divider {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--cta-gold), #f0c027);
+    border-radius: 2px;
+    margin: 0 auto 1.5rem;
 }
 
 /* Divider */
@@ -518,5 +527,16 @@ img {
         opacity: 1;
         transform: none;
         transition: none;
+    }
+}
+
+/* ===== Reduced Motion ===== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
     }
 }

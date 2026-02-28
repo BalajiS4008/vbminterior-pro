@@ -180,7 +180,7 @@ const Home = ({ onOpenModal }) => {
             {/* 1. Hero Section */}
             <section className="hero">
                 <div className="hero-background">
-                    <video className="hero-video" autoPlay muted loop playsInline>
+                    <video className="hero-video" autoPlay muted loop playsInline preload="metadata">
                         <source src={heroVideo} type="video/mp4" />
                     </video>
                     <div className="hero-overlay"></div>

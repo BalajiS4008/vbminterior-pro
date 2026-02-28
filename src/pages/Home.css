@@ -219,7 +219,7 @@
 
 /* ===== Luxury Gallery ===== */
 .luxury-gallery-section {
-    padding: 5rem 0;
+    padding: 6rem 0;
     background: var(--bg-white);
 }
 
@@ -533,7 +533,7 @@
 
 /* ===== Dream Home Interiors Made Easy ===== */
 .dream-home-section {
-    padding: 2rem 0 1.5rem;
+    padding: 3rem 0 2rem;
     background: var(--bg-white);
 }
 
@@ -1092,11 +1092,15 @@
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
     .hero {
-        min-height: 450px;
+        min-height: 400px;
     }
 
     .hero-title {
-        font-size: 32px;
+        font-size: 28px;
+    }
+
+    .hero-subtitle {
+        margin-bottom: 1.5rem;
     }
 
     .welcome-grid {
