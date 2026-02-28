@@ -66,6 +66,12 @@ const Home = ({ onOpenModal }) => {
                 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&q=80',
                 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=600&q=80',
             ],
+            alts: [
+                'Modern interior design in Anna Nagar, Chennai',
+                'Contemporary home interior in Adyar, Chennai',
+                'Luxury interior design in T. Nagar, Chennai',
+                'Elegant home design in Velachery, Chennai',
+            ],
         },
         {
             label: 'Kitchen Designs',
@@ -74,6 +80,12 @@ const Home = ({ onOpenModal }) => {
                 'https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&q=80',
                 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=600&q=80',
                 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80',
+            ],
+            alts: [
+                'Modular kitchen design in Porur, Chennai',
+                'Modern kitchen interior in OMR, Chennai',
+                'Kitchen renovation in Tambaram, Chennai',
+                'Premium kitchen design in Besant Nagar, Chennai',
             ],
         },
         {
@@ -84,6 +96,12 @@ const Home = ({ onOpenModal }) => {
                 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=600&q=80',
                 'https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?w=600&q=80',
             ],
+            alts: [
+                'Luxury bedroom design in Nungambakkam, Chennai',
+                'Modern bedroom interior in Mylapore, Chennai',
+                'Bedroom design in Guindy, Chennai',
+                'Master bedroom in Kilpauk, Chennai',
+            ],
         },
         {
             label: 'Living Room Designs',
@@ -92,6 +110,12 @@ const Home = ({ onOpenModal }) => {
                 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600&q=80',
                 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80',
                 'https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?w=600&q=80',
+            ],
+            alts: [
+                'Living room interior design in Sholinganallur, Chennai',
+                'Modern living room in ECR, Chennai',
+                'Luxury living room in Alwarpet, Chennai',
+                'Living room design in Chromepet, Chennai',
             ],
         },
     ];
@@ -131,6 +155,14 @@ const Home = ({ onOpenModal }) => {
         { question: 'Do you provide 3D designs before execution?', answer: 'Yes, we provide detailed 3D visualizations and renderings so you can see exactly how your space will look before we begin the execution phase.' },
         { question: 'What makes VBM Interior different from others?', answer: 'Our combination of creative design expertise, quality materials, 10-year warranty, on-time delivery, and affordable pricing sets us apart. We treat every project as our own home.' },
     ];
+
+    const areasWeServe = {
+        'South Chennai': ['Adyar', 'Besant Nagar', 'Thiruvanmiyur', 'Velachery', 'Mylapore', 'R.A. Puram', 'Alwarpet', 'Guindy'],
+        'West Chennai': ['Anna Nagar', 'Mogappair', 'Ambattur', 'Porur', 'Valasaravakkam', 'Virugambakkam', 'Koyambedu', 'Vadapalani'],
+        'Central Chennai': ['T. Nagar', 'Nungambakkam', 'Kilpauk', 'Egmore', 'Chetpet', 'Teynampet', 'Kodambakkam'],
+        'IT Corridor': ['OMR', 'ECR', 'Sholinganallur', 'Perungudi', 'Siruseri', 'Navalur', 'Kelambakkam', 'Medavakkam'],
+        'Nearby Districts': ['Tambaram', 'Chromepet', 'Pallavaram', 'Kancheepuram', 'Chengalpattu', 'Mahabalipuram', 'Tiruvallur'],
+    };
 
     return (
         <div className="home">
@@ -481,6 +513,33 @@ const Home = ({ onOpenModal }) => {
                         <p>Find answers to common questions about our services</p>
                     </div>
                     <FAQAccordion items={faqItems} />
+                </div>
+            </section>
+
+            {/* Areas We Serve */}
+            <section className="section areas-section">
+                <div className="container">
+                    <div className="section-header text-center">
+                        <h2>Areas We Serve in Chennai & Beyond</h2>
+                        <p>Premium interior design services across Chennai, Kancheepuram, Chengalpattu, and nearby districts</p>
+                    </div>
+                    <div className="areas-grid">
+                        {Object.entries(areasWeServe).map(([zone, areas]) => (
+                            <div key={zone} className="areas-zone">
+                                <h3 className="areas-zone-title">{zone}</h3>
+                                <div className="areas-tags">
+                                    {areas.map((area) => (
+                                        <span key={area} className="area-tag">{area}</span>
+                                    ))}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                    <div className="text-center" style={{ marginTop: '2rem' }}>
+                        <button onClick={onOpenModal} className="btn btn-primary">
+                            Get Free Quote for Your Area
+                        </button>
+                    </div>
                 </div>
             </section>
 

@@ -1036,6 +1036,59 @@
     letter-spacing: 0.02em;
 }
 
+/* ===== Areas We Serve ===== */
+.areas-section {
+    padding: 5rem 0;
+    background: var(--bg-light);
+}
+
+.areas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.areas-zone {
+    background: var(--bg-white);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-card);
+}
+
+.areas-zone-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--cta-gold);
+}
+
+.areas-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.area-tag {
+    display: inline-block;
+    padding: 0.35rem 0.85rem;
+    background: var(--bg-light);
+    color: var(--text-secondary);
+    border-radius: var(--radius-full);
+    font-size: 0.82rem;
+    font-weight: 500;
+    transition: all 0.25s ease;
+    border: 1px solid transparent;
+}
+
+.area-tag:hover {
+    background: var(--cta-gold);
+    color: var(--text-primary);
+    border-color: var(--cta-border);
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
     .hero {
@@ -1108,6 +1161,10 @@
         width: 250px;
         height: 250px;
         left: -5%;
+    }
+
+    .areas-grid {
+        grid-template-columns: 1fr;
     }
 
     /* Final CTA responsive */
