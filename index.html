@@ -53,6 +53,7 @@
     <meta http-equiv="content-language" content="en" />
     <link rel="alternate" hreflang="en-in" href="https://vbminterior.com/" />
     <link rel="alternate" hreflang="x-default" href="https://vbminterior.com/" />
+    <link rel="alternate" hreflang="ta-in" href="https://vbminterior.com/" />
 
     <!-- Favicon & Icons -->
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -112,15 +113,46 @@
       },
       "hasMap": "https://maps.google.com/?q=13.0604,80.2496",
       "areaServed": [
-        {
-          "@type": "City",
-          "name": "Chennai",
-          "sameAs": "https://en.wikipedia.org/wiki/Chennai"
-        },
-        {
-          "@type": "State",
-          "name": "Tamil Nadu"
-        }
+        { "@type": "City", "name": "Chennai", "sameAs": "https://en.wikipedia.org/wiki/Chennai" },
+        { "@type": "State", "name": "Tamil Nadu" },
+        { "@type": "Place", "name": "Adyar, Chennai" },
+        { "@type": "Place", "name": "Besant Nagar, Chennai" },
+        { "@type": "Place", "name": "Thiruvanmiyur, Chennai" },
+        { "@type": "Place", "name": "Velachery, Chennai" },
+        { "@type": "Place", "name": "Mylapore, Chennai" },
+        { "@type": "Place", "name": "R.A. Puram, Chennai" },
+        { "@type": "Place", "name": "Alwarpet, Chennai" },
+        { "@type": "Place", "name": "Guindy, Chennai" },
+        { "@type": "Place", "name": "Anna Nagar, Chennai" },
+        { "@type": "Place", "name": "Mogappair, Chennai" },
+        { "@type": "Place", "name": "Ambattur, Chennai" },
+        { "@type": "Place", "name": "Porur, Chennai" },
+        { "@type": "Place", "name": "Valasaravakkam, Chennai" },
+        { "@type": "Place", "name": "Virugambakkam, Chennai" },
+        { "@type": "Place", "name": "Koyambedu, Chennai" },
+        { "@type": "Place", "name": "Vadapalani, Chennai" },
+        { "@type": "Place", "name": "T. Nagar, Chennai" },
+        { "@type": "Place", "name": "Nungambakkam, Chennai" },
+        { "@type": "Place", "name": "Kilpauk, Chennai" },
+        { "@type": "Place", "name": "Egmore, Chennai" },
+        { "@type": "Place", "name": "Chetpet, Chennai" },
+        { "@type": "Place", "name": "Teynampet, Chennai" },
+        { "@type": "Place", "name": "Kodambakkam, Chennai" },
+        { "@type": "Place", "name": "OMR, Chennai" },
+        { "@type": "Place", "name": "ECR, Chennai" },
+        { "@type": "Place", "name": "Sholinganallur, Chennai" },
+        { "@type": "Place", "name": "Perungudi, Chennai" },
+        { "@type": "Place", "name": "Siruseri, Chennai" },
+        { "@type": "Place", "name": "Navalur, Chennai" },
+        { "@type": "Place", "name": "Kelambakkam, Chennai" },
+        { "@type": "Place", "name": "Medavakkam, Chennai" },
+        { "@type": "Place", "name": "Tambaram, Chennai" },
+        { "@type": "Place", "name": "Chromepet, Chennai" },
+        { "@type": "Place", "name": "Pallavaram, Chennai" },
+        { "@type": "City", "name": "Kancheepuram" },
+        { "@type": "City", "name": "Chengalpattu" },
+        { "@type": "Place", "name": "Mahabalipuram" },
+        { "@type": "City", "name": "Tiruvallur" }
       ],
       "serviceArea": {
         "@type": "GeoCircle",
@@ -227,7 +259,12 @@
       "publisher": {
         "@id": "https://vbminterior.com/#organization"
       },
-      "inLanguage": "en-IN"
+      "inLanguage": "en-IN",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://vbminterior.com/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
     }
     </script>
 
@@ -251,18 +288,45 @@
       "provider": { "@id": "https://vbminterior.com/#business" },
       "areaServed": [
         { "@type": "City", "name": "Chennai", "sameAs": "https://en.wikipedia.org/wiki/Chennai" },
-        { "@type": "Place", "name": "Anna Nagar, Chennai" },
-        { "@type": "Place", "name": "T. Nagar, Chennai" },
-        { "@type": "Place", "name": "Velachery, Chennai" },
-        { "@type": "Place", "name": "OMR, Chennai" },
+        { "@type": "State", "name": "Tamil Nadu" },
         { "@type": "Place", "name": "Adyar, Chennai" },
-        { "@type": "Place", "name": "Porur, Chennai" },
-        { "@type": "Place", "name": "Tambaram, Chennai" },
+        { "@type": "Place", "name": "Besant Nagar, Chennai" },
+        { "@type": "Place", "name": "Thiruvanmiyur, Chennai" },
+        { "@type": "Place", "name": "Velachery, Chennai" },
         { "@type": "Place", "name": "Mylapore, Chennai" },
-        { "@type": "Place", "name": "Nungambakkam, Chennai" },
+        { "@type": "Place", "name": "R.A. Puram, Chennai" },
+        { "@type": "Place", "name": "Alwarpet, Chennai" },
         { "@type": "Place", "name": "Guindy, Chennai" },
-        { "@type": "Place", "name": "Thoraipakkam, Chennai" },
-        { "@type": "Place", "name": "Sholinganallur, Chennai" }
+        { "@type": "Place", "name": "Anna Nagar, Chennai" },
+        { "@type": "Place", "name": "Mogappair, Chennai" },
+        { "@type": "Place", "name": "Ambattur, Chennai" },
+        { "@type": "Place", "name": "Porur, Chennai" },
+        { "@type": "Place", "name": "Valasaravakkam, Chennai" },
+        { "@type": "Place", "name": "Virugambakkam, Chennai" },
+        { "@type": "Place", "name": "Koyambedu, Chennai" },
+        { "@type": "Place", "name": "Vadapalani, Chennai" },
+        { "@type": "Place", "name": "T. Nagar, Chennai" },
+        { "@type": "Place", "name": "Nungambakkam, Chennai" },
+        { "@type": "Place", "name": "Kilpauk, Chennai" },
+        { "@type": "Place", "name": "Egmore, Chennai" },
+        { "@type": "Place", "name": "Chetpet, Chennai" },
+        { "@type": "Place", "name": "Teynampet, Chennai" },
+        { "@type": "Place", "name": "Kodambakkam, Chennai" },
+        { "@type": "Place", "name": "OMR, Chennai" },
+        { "@type": "Place", "name": "ECR, Chennai" },
+        { "@type": "Place", "name": "Sholinganallur, Chennai" },
+        { "@type": "Place", "name": "Perungudi, Chennai" },
+        { "@type": "Place", "name": "Siruseri, Chennai" },
+        { "@type": "Place", "name": "Navalur, Chennai" },
+        { "@type": "Place", "name": "Kelambakkam, Chennai" },
+        { "@type": "Place", "name": "Medavakkam, Chennai" },
+        { "@type": "Place", "name": "Tambaram, Chennai" },
+        { "@type": "Place", "name": "Chromepet, Chennai" },
+        { "@type": "Place", "name": "Pallavaram, Chennai" },
+        { "@type": "City", "name": "Kancheepuram" },
+        { "@type": "City", "name": "Chengalpattu" },
+        { "@type": "Place", "name": "Mahabalipuram" },
+        { "@type": "City", "name": "Tiruvallur" }
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -291,10 +355,12 @@
         { "@type": "Question", "name": "What is the warranty on your work?", "acceptedAnswer": { "@type": "Answer", "text": "We provide a comprehensive 10-year warranty on all our interior work covering manufacturing defects, material quality, and workmanship issues." } },
         { "@type": "Question", "name": "Can you work within a specific budget?", "acceptedAnswer": { "@type": "Answer", "text": "Absolutely! We work with various budgets and offer flexible packages to suit your financial requirements without compromising on quality." } },
         { "@type": "Question", "name": "Do you handle the complete project or just design?", "acceptedAnswer": { "@type": "Answer", "text": "We offer end-to-end services — from initial design concepts and 3D visualization to material procurement, execution, and final installation." } },
-        { "@type": "Question", "name": "What areas in Chennai do you serve?", "acceptedAnswer": { "@type": "Answer", "text": "We serve all of Chennai including T. Nagar, Anna Nagar, Velachery, Adyar, OMR, ECR, Porur, Mylapore, Nungambakkam, Tambaram, and surrounding areas in Tamil Nadu." } },
+        { "@type": "Question", "name": "What areas in Chennai do you serve?", "acceptedAnswer": { "@type": "Answer", "text": "We serve all of Chennai except North Chennai — including Adyar, Anna Nagar, T. Nagar, Velachery, OMR, ECR, Besant Nagar, Porur, Mylapore, Nungambakkam, Tambaram, Sholinganallur, and 30+ more areas. We also serve nearby districts: Kancheepuram, Chengalpattu, and parts of Tiruvallur." } },
         { "@type": "Question", "name": "Do you provide 3D designs before execution?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, we provide detailed 3D visualizations and renderings so you can see exactly how your space will look before execution begins." } },
         { "@type": "Question", "name": "How do I get started with VBM Interior?", "acceptedAnswer": { "@type": "Answer", "text": "Simply click the 'Get Instant Quote' button or call us at +91 7397373587. We will schedule a free consultation to discuss your project requirements." } },
-        { "@type": "Question", "name": "What makes VBM Interior different from other interior designers in Chennai?", "acceptedAnswer": { "@type": "Answer", "text": "Our combination of 15+ years of creative design expertise, quality materials from trusted suppliers, comprehensive 10-year warranty, on-time delivery, and transparent affordable pricing sets us apart. We treat every project as our own home." } }
+        { "@type": "Question", "name": "What makes VBM Interior different from other interior designers in Chennai?", "acceptedAnswer": { "@type": "Answer", "text": "Our combination of 15+ years of creative design expertise, quality materials from trusted suppliers, comprehensive 10-year warranty, on-time delivery, and transparent affordable pricing sets us apart. We treat every project as our own home." } },
+        { "@type": "Question", "name": "How much does interior design cost in Chennai?", "acceptedAnswer": { "@type": "Answer", "text": "Complete 2BHK interiors start from ₹3.5 lakhs, 3BHK from ₹5.5 lakhs, and 4BHK from ₹8 lakhs. Modular kitchens start from ₹1.5 lakhs, and single room interiors from ₹75,000. We offer transparent pricing with no hidden costs." } },
+        { "@type": "Question", "name": "Do you provide interior design services in Anna Nagar and OMR?", "acceptedAnswer": { "@type": "Answer", "text": "Yes! We have completed 100+ projects in Anna Nagar, OMR, ECR, and surrounding areas. Our team is familiar with the apartment layouts common in these neighborhoods and can provide free on-site consultations." } }
       ]
     }
     </script>

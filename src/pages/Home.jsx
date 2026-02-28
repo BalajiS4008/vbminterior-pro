@@ -150,10 +150,12 @@ const Home = ({ onOpenModal }) => {
         { question: 'What is the warranty on your work?', answer: 'We provide a comprehensive 10-year warranty on all our interior work. This covers manufacturing defects, material quality, and workmanship issues.' },
         { question: 'Can you work within a specific budget?', answer: 'Absolutely! We believe luxury should be accessible to everyone. We work with various budgets and offer flexible packages to suit your financial requirements without compromising on quality.' },
         { question: 'Do you handle the complete project or just design?', answer: 'We offer end-to-end services. From initial design concepts and 3D visualization to material procurement, execution, and final installation — we handle everything.' },
-        { question: 'What areas do you serve?', answer: 'We primarily serve Chennai and surrounding areas in Tamil Nadu. However, we also take on projects in other cities based on scope and requirements.' },
+        { question: 'What areas do you serve?', answer: 'We serve all of Chennai except North Chennai — including Adyar, Anna Nagar, T. Nagar, Velachery, OMR, ECR, Besant Nagar, Porur, Mylapore, Nungambakkam, Tambaram, Sholinganallur, and 30+ more areas. We also serve nearby districts: Kancheepuram, Chengalpattu, and parts of Tiruvallur.' },
         { question: 'How do I get started with VBM Interior?', answer: 'Getting started is easy! Simply click the "Get Instant Quote" button or call us directly. We will schedule a free consultation to discuss your project requirements.' },
         { question: 'Do you provide 3D designs before execution?', answer: 'Yes, we provide detailed 3D visualizations and renderings so you can see exactly how your space will look before we begin the execution phase.' },
         { question: 'What makes VBM Interior different from others?', answer: 'Our combination of creative design expertise, quality materials, 10-year warranty, on-time delivery, and affordable pricing sets us apart. We treat every project as our own home.' },
+        { question: 'How much does interior design cost in Chennai?', answer: 'Complete 2BHK interiors start from ₹3.5 lakhs, 3BHK from ₹5.5 lakhs, and 4BHK from ₹8 lakhs. Modular kitchens start from ₹1.5 lakhs, and single room interiors from ₹75,000. We offer transparent pricing with no hidden costs.' },
+        { question: 'Do you provide interior design services in Anna Nagar and OMR?', answer: 'Yes! We have completed 100+ projects in Anna Nagar, OMR, ECR, and surrounding areas. Our team is familiar with the apartment layouts common in these neighborhoods and can provide free on-site consultations.' },
     ];
 
     const areasWeServe = {
