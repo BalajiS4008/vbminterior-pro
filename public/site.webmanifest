@@ -1,0 +1,13 @@
+{
+  "name": "VBM Interior — Best Interior Designers in Chennai",
+  "short_name": "VBM Interior",
+  "description": "VBM Interior is a Chennai-based interior design company with 500+ completed projects. We offer end-to-end residential and commercial interior design services with a 10-year warranty.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#0a1628",
+  "background_color": "#FFFFFF",
+  "orientation": "any",
+  "lang": "en-IN",
+  "categories": ["business", "lifestyle", "home", "design"]
+}

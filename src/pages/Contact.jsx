@@ -1,16 +1,15 @@
 import { useState } from 'react';
 import {
     FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock,
-    FaUser, FaPaperPlane, FaComment, FaChevronDown, FaChevronUp
+    FaUser, FaPaperPlane, FaComment
 } from 'react-icons/fa';
+import FAQAccordion from '../components/FAQAccordion';
 import './Contact.css';
 
 const Contact = () => {
     const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' });
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState(null);
-    const [openFaq, setOpenFaq] = useState(null);
-
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
@@ -40,17 +39,17 @@ const Contact = () => {
     };
 
     const contactInfo = [
-        { icon: <FaMapMarkerAlt />, title: 'Visit Us', details: ['123 Design Street', 'Chennai, Tamil Nadu 600001', 'India'], gradient: 'var(--primary-gradient)' },
-        { icon: <FaPhone />, title: 'Call Us', details: ['+91 98765 43210', '+91 98765 43211', 'Mon - Sat: 9AM - 7PM'], gradient: 'var(--secondary-gradient)' },
-        { icon: <FaEnvelope />, title: 'Email Us', details: ['info@vbminterior.com', 'support@vbminterior.com', 'We reply within 24 hours'], gradient: 'var(--accent-gradient)' },
-        { icon: <FaClock />, title: 'Working Hours', details: ['Monday - Friday: 9AM - 7PM', 'Saturday: 10AM - 5PM', 'Sunday: Closed'], gradient: 'var(--warm-gradient)' },
+        { icon: <FaMapMarkerAlt />, title: 'Visit Us', details: ['112 NSK Nagar Main Rd', 'Chennai, Tamil Nadu', 'India'], gradient: 'var(--primary-gradient)' },
+        { icon: <FaPhone />, title: 'Call Us', details: ['+91 7397373587', 'Mon - Sat: 9AM - 7PM'], gradient: 'var(--secondary-gradient)' },
+        { icon: <FaEnvelope />, title: 'Email Us', details: ['Vbminterior@gmail.com', 'We reply within 24 hours'], gradient: 'var(--accent-gradient)' },
+        { icon: <FaClock />, title: 'Working Hours', details: ['Monday - Saturday: 9AM - 7PM', 'Sunday: Closed'], gradient: 'var(--warm-gradient)' },
     ];
 
     const faqs = [
-        { q: 'What services does VBM Interior provide?', a: 'We offer comprehensive interior design services including living room, kitchen, wardrobe, and bedroom designs, as well as office and commercial space transformations.' },
-        { q: 'How long does a typical project take?', a: 'A single room redesign might take 4-6 weeks, while larger projects could take several months. We provide a clear schedule during the planning phase.' },
-        { q: 'Do you offer free consultations?', a: 'Yes! We begin with a free initial consultation to discuss your ideas, style preferences, and budget.' },
-        { q: 'What is your warranty policy?', a: 'We offer a comprehensive 10-year warranty on all our work, ensuring quality and peace of mind.' },
+        { question: 'What services does VBM Interior provide?', answer: 'We offer comprehensive interior design services including living room, kitchen, wardrobe, and bedroom designs, as well as office and commercial space transformations.' },
+        { question: 'How long does a typical project take?', answer: 'A single room redesign might take 4-6 weeks, while larger projects could take several months. We provide a clear schedule during the planning phase.' },
+        { question: 'Do you offer free consultations?', answer: 'Yes! We begin with a free initial consultation to discuss your ideas, style preferences, and budget.' },
+        { question: 'What is your warranty policy?', answer: 'We offer a comprehensive 10-year warranty on all our work, ensuring quality and peace of mind.' },
     ];
 
     return (
@@ -164,23 +163,7 @@ const Contact = () => {
                         <h2>Frequently Asked <span className="gradient-text"><em>Questions</em></span></h2>
                         <p>Quick answers to common questions</p>
                     </div>
-                    <div className="faq-list">
-                        {faqs.map((faq, index) => (
-                            <div
-                                key={index}
-                                className={`faq-item ${openFaq === index ? 'open' : ''}`}
-                                onClick={() => setOpenFaq(openFaq === index ? null : index)}
-                            >
-                                <div className="faq-question">
-                                    <h4>{faq.q}</h4>
-                                    {openFaq === index ? <FaChevronUp /> : <FaChevronDown />}
-                                </div>
-                                <div className="faq-answer">
-                                    <p>{faq.a}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
+                    <FAQAccordion items={faqs} />
                 </div>
             </section>
         </div>
