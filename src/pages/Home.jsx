@@ -29,13 +29,13 @@ import siteExecutionImg from '../assets/images/section1/Siteexecution.png';
 import handoverImg from '../assets/images/section1/Handoverontime.png';
 import ctaBookshelfImg from '../assets/images/Rooms/House-bookshelves-amico.webp';
 import ctaKitchenImg from '../assets/images/Rooms/kitchen-concept-illustration.jpg';
-import hallImg from '../assets/images/Rooms/Hall.png';
-import homeImg from '../assets/images/Rooms/Home.png';
-import dinnerImg from '../assets/images/Rooms/Dinner.png';
-import studyAreaImg from '../assets/images/Rooms/studyarea.png';
-import hall1Img from '../assets/images/Rooms/Hall1.png';
-import dinningImg from '../assets/images/Rooms/Dinning.png';
-import bathroomImg from '../assets/images/Rooms/bathroom.png';
+import hallImg from '../assets/images/Rooms/Hall.jpg';
+import homeImg from '../assets/images/Rooms/Home.jpg';
+import dinnerImg from '../assets/images/Rooms/Dinner.jpg';
+import studyAreaImg from '../assets/images/Rooms/studyarea.jpg';
+import hall1Img from '../assets/images/Rooms/Hall1.jpg';
+import dinningImg from '../assets/images/Rooms/Dinning.jpg';
+import bathroomImg from '../assets/images/Rooms/bathroom.jpg';
 import './Home.css';
 
 const Home = ({ onOpenModal }) => {
