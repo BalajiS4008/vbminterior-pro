@@ -13,11 +13,9 @@ import {
     FaRulerCombined,
     FaChevronRight
 } from 'react-icons/fa';
-import ContactModal from '../components/ContactModal';
 import './Portfolio.css';
 
-const Portfolio = () => {
-    const [showModal, setShowModal] = useState(false);
+const Portfolio = ({ onOpenModal }) => {
     const [filter, setFilter] = useState('all');
     const [lightbox, setLightbox] = useState({ open: false, index: 0 });
 
@@ -222,7 +220,7 @@ const Portfolio = () => {
                                             <FaSearchPlus />
                                         </button>
                                         <button
-                                            onClick={() => setShowModal(true)}
+                                            onClick={onOpenModal}
                                             className="btn btn-primary portfolio-quote-btn"
                                         >
                                             Get Similar Design
@@ -264,7 +262,7 @@ const Portfolio = () => {
                         <p className="text-white">
                             Let's create something amazing for your space. Get in touch for a free consultation!
                         </p>
-                        <button onClick={() => setShowModal(true)} className="btn btn-primary">
+                        <button onClick={onOpenModal} className="btn btn-primary">
                             Start Your Project
                         </button>
                     </div>
@@ -302,7 +300,7 @@ const Portfolio = () => {
                                 <span><FaMapMarkerAlt /> {currentProject.location}</span>
                                 <span><FaRulerCombined /> {currentProject.area}</span>
                             </div>
-                            <button onClick={() => { closeLightbox(); setShowModal(true); }} className="btn btn-primary">
+                            <button onClick={() => { closeLightbox(); onOpenModal(); }} className="btn btn-primary">
                                 Get Similar Design
                             </button>
                         </div>
@@ -310,7 +308,6 @@ const Portfolio = () => {
                 </div>
             )}
 
-            {showModal && <ContactModal onClose={() => setShowModal(false)} />}
         </div>
     );
 };

@@ -1,13 +1,10 @@
-import { useState } from 'react';
 import {
     FaCouch, FaBed, FaUtensils, FaPaintBrush, FaBuilding, FaChair,
     FaCheckCircle, FaArrowRight
 } from 'react-icons/fa';
-import ContactModal from '../components/ContactModal';
 import './Services.css';
 
-const Services = () => {
-    const [showModal, setShowModal] = useState(false);
+const Services = ({ onOpenModal }) => {
 
     const services = [
         {
@@ -118,7 +115,7 @@ const Services = () => {
                                             <li key={idx}><FaCheckCircle /><span>{feature}</span></li>
                                         ))}
                                     </ul>
-                                    <button onClick={() => setShowModal(true)} className="btn btn-outline">
+                                    <button onClick={onOpenModal} className="btn btn-outline">
                                         Get Quote <FaArrowRight />
                                     </button>
                                 </div>
@@ -157,14 +154,13 @@ const Services = () => {
                         <p className="text-white">
                             Get a free consultation and quote today. Let's bring your vision to life!
                         </p>
-                        <button onClick={() => setShowModal(true)} className="btn btn-primary">
+                        <button onClick={onOpenModal} className="btn btn-primary">
                             Get Free Quote
                         </button>
                     </div>
                 </div>
             </section>
 
-            {showModal && <ContactModal onClose={() => setShowModal(false)} />}
         </div>
     );
 };
