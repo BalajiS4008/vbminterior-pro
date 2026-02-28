@@ -12,6 +12,7 @@ import DesignTabs from '../components/DesignTabs';
 import FAQAccordion from '../components/FAQAccordion';
 import blogPostsData from '../data/blogData';
 import GoogleReviews from '../components/GoogleReviews';
+import useScrollReveal from '../hooks/useScrollReveal';
 import heroVideo from '../assets/images/herosectionofvbm.mp4';
 import welcomeImg from '../assets/images/welcome-sec-img.png';
 import customDesignImg from '../assets/images/customintererdesign.png';
@@ -158,6 +159,14 @@ const Home = ({ onOpenModal }) => {
         { question: 'Do you provide interior design services in Anna Nagar and OMR?', answer: 'Yes! We have completed 100+ projects in Anna Nagar, OMR, ECR, and surrounding areas. Our team is familiar with the apartment layouts common in these neighborhoods and can provide free on-site consultations.' },
     ];
 
+    const welcomeRef = useScrollReveal();
+    const galleryRef = useScrollReveal();
+    const tabsRef = useScrollReveal();
+    const affordableRef = useScrollReveal();
+    const blogRef = useScrollReveal();
+    const areasRef = useScrollReveal();
+    const faqRef = useScrollReveal();
+
     const areasWeServe = {
         'South Chennai': ['Adyar', 'Besant Nagar', 'Thiruvanmiyur', 'Velachery', 'Mylapore', 'R.A. Puram', 'Alwarpet', 'Guindy'],
         'West Chennai': ['Anna Nagar', 'Mogappair', 'Ambattur', 'Porur', 'Valasaravakkam', 'Virugambakkam', 'Koyambedu', 'Vadapalani'],
@@ -194,7 +203,7 @@ const Home = ({ onOpenModal }) => {
             {/* 2. Welcome Section */}
             <section className="section welcome-section">
                 <div className="container">
-                    <div className="welcome-grid">
+                    <div className="welcome-grid scroll-reveal" ref={welcomeRef}>
                         <div className="welcome-image animate-slide-in-left">
                             <img
                                 src={welcomeImg}
@@ -280,7 +289,7 @@ const Home = ({ onOpenModal }) => {
                         <p>At VBM Interior, we believe luxury interior design in Chennai should be accessible to everyone. Our approach combines elegance and functionality while staying budget-friendly, so you can enjoy a beautifully curated home in Chennai and Tamil Nadu without the premium price tag.</p>
                         <button className="btn" onClick={onOpenModal}>Get Quote</button>
                     </div>
-                    <div className="luxury-gallery">
+                    <div className="luxury-gallery scroll-reveal" ref={galleryRef}>
                         <div className="luxury-gallery-item luxury-gallery-wide">
                             <img src={hallImg} alt="Luxury hall interior design in Anna Nagar, Chennai by VBM Interior" loading="lazy" />
                             <span className="luxury-gallery-label">HALL</span>
@@ -326,7 +335,7 @@ const Home = ({ onOpenModal }) => {
             <GoogleReviews />
 
             {/* 7. Design Categories Tabs */}
-            <section className="section design-tabs-section">
+            <section className="section design-tabs-section scroll-reveal" ref={tabsRef}>
                 <div className="container">
                     <div className="section-header text-center">
                         <h2>Explore Our Design Categories</h2>
@@ -357,7 +366,7 @@ const Home = ({ onOpenModal }) => {
                         <h2>Affordable luxury home interiors</h2>
                         <p>Luxury interiors crafted to perfection at prices that suit every budget</p>
                     </div>
-                    <div className="affordable-grid">
+                    <div className="affordable-grid scroll-reveal" ref={affordableRef}>
                         <div className="affordable-image">
                             <img src={homeImg} alt="Affordable luxury living room interior design in Nungambakkam, Chennai" loading="lazy" />
                             <div className="affordable-overlay">
@@ -436,7 +445,7 @@ const Home = ({ onOpenModal }) => {
                         <h2>Home Interior Design Guides: Tips & Inspiration</h2>
                         <p>Stay updated with the latest design trends and ideas</p>
                     </div>
-                    <div className="home-blog-layout">
+                    <div className="home-blog-layout scroll-reveal" ref={blogRef}>
                         {/* Featured / Large Card */}
                         <Link to={`/blog/${blogPostsData[0].slug}`} className="home-blog-featured">
                             <div className="home-blog-featured-img">
@@ -514,7 +523,9 @@ const Home = ({ onOpenModal }) => {
                         <h2>Frequently Asked Questions</h2>
                         <p>Find answers to common questions about our services</p>
                     </div>
-                    <FAQAccordion items={faqItems} />
+                    <div className="scroll-reveal" ref={faqRef}>
+                        <FAQAccordion items={faqItems} />
+                    </div>
                 </div>
             </section>
 
@@ -525,7 +536,7 @@ const Home = ({ onOpenModal }) => {
                         <h2>Areas We Serve in Chennai & Beyond</h2>
                         <p>Premium interior design services across Chennai, Kancheepuram, Chengalpattu, and nearby districts</p>
                     </div>
-                    <div className="areas-grid">
+                    <div className="areas-grid scroll-reveal" ref={areasRef}>
                         {Object.entries(areasWeServe).map(([zone, areas]) => (
                             <div key={zone} className="areas-zone">
                                 <h3 className="areas-zone-title">{zone}</h3>
