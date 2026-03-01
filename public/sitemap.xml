@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Sitemap for VBM Interior — https://vbminterior.com -->
-<!-- Updated: 2026-02-27 -->
+<!-- Updated: 2026-03-01 -->
 <!-- Submit to Google Search Console after uploading -->
 <urlset
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -61,7 +61,7 @@
   <!-- Blog Index -->
   <url>
     <loc>https://vbminterior.com/blog/</loc>
-    <lastmod>2026-02-27</lastmod>
+    <lastmod>2026-03-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -120,6 +120,49 @@
   <url>
     <loc>https://vbminterior.com/blog/interior-design-cost-chennai-2026/</loc>
     <lastmod>2026-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- New Blog Posts — March 2026 -->
+  <url>
+    <loc>https://vbminterior.com/blog/vastu-compliant-interior-design-chennai/</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://vbminterior.com/blog/false-ceiling-designs-types-costs-ideas/</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://vbminterior.com/blog/wardrobe-design-ideas-storage-solutions/</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://vbminterior.com/blog/interior-design-mistakes-waste-money/</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://vbminterior.com/blog/interior-design-timeline-how-long/</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://vbminterior.com/blog/living-room-interior-design-ideas-indian-homes/</loc>
+    <lastmod>2026-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
