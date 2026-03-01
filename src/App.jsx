@@ -10,6 +10,7 @@ import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import Contact from './pages/Contact';
 import ContactModal from './components/ContactModal';
+import ChatBot from './components/ChatBot';
 import './App.css';
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
         </main>
         <Footer onOpenModal={openModal} />
         {showModal && <ContactModal onClose={closeModal} />}
+        <ChatBot />
       </div>
     </Router>
   );

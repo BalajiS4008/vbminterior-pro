@@ -4,135 +4,171 @@ import {
     FaTwitter,
     FaInstagram,
     FaLinkedinIn,
-    FaPinterest,
-    FaMapMarkerAlt,
-    FaPhone,
+    FaYoutube,
     FaEnvelope,
-    FaHeart
+    FaWhatsapp
 } from 'react-icons/fa';
+import logoVbm from '../assets/images/logovbm.webp';
 import './Footer.css';
 
-const Footer = () => {
-    const currentYear = new Date().getFullYear();
-
+const Footer = ({ onOpenModal }) => {
     const quickLinks = [
         { path: '/', label: 'Home' },
-        { path: '/about', label: 'About Us' },
+        { path: '/blog', label: 'Blogs' },
+        { path: '/portfolio', label: 'Projects' },
         { path: '/services', label: 'Services' },
-        { path: '/portfolio', label: 'Portfolio' },
+        { path: '/about', label: 'About Us' },
     ];
 
     const services = [
-        'Interior Design',
-        'Kitchen Design',
-        'Bedroom Design',
-        'Living Room Design',
-        'Office Design',
-        'Commercial Design',
+        { label: 'Interior Design', path: '/services' },
+        { label: 'Kitchen Designs', path: '/services' },
+        { label: 'Bedroom Designs', path: '/services' },
+        { label: 'Living room Designs', path: '/services' },
     ];
 
     const socialLinks = [
         { icon: <FaFacebookF />, url: '#', label: 'Facebook' },
         { icon: <FaTwitter />, url: '#', label: 'Twitter' },
+        { icon: <FaYoutube />, url: '#', label: 'YouTube' },
         { icon: <FaInstagram />, url: '#', label: 'Instagram' },
         { icon: <FaLinkedinIn />, url: '#', label: 'LinkedIn' },
-        { icon: <FaPinterest />, url: '#', label: 'Pinterest' },
     ];
 
     return (
         <footer className="footer">
+            {/* SVG filter: dark text → white, gold house → preserved yellow */}
+            <svg width="0" height="0" style={{ position: 'absolute' }}>
+                <defs>
+                    <filter id="footer-logo-filter" colorInterpolationFilters="sRGB">
+                        <feComponentTransfer>
+                            <feFuncR type="table" tableValues="1 0.95 0.9 0.85 0.83" />
+                            <feFuncG type="table" tableValues="1 0.95 0.85 0.7 0.63" />
+                            <feFuncB type="table" tableValues="1 0.95 0.6 0.2 0.09" />
+                            <feFuncA type="identity" />
+                        </feComponentTransfer>
+                    </filter>
+                </defs>
+            </svg>
+
+            {/* CTA Banner with dark geometric background */}
+            <div className="footer-cta-banner">
+                <div className="footer-cta-overlay" />
+                <div className="container">
+                    <div className="footer-cta-banner-content">
+                        <h3>Transform Your Vision into Reality with VBM Interior</h3>
+                        <button onClick={onOpenModal} className="btn btn-cta-gold">
+                            Book Free Consultation!
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            {/* Main Footer */}
             <div className="footer-main">
                 <div className="container">
                     <div className="footer-grid">
-                        <div className="footer-col">
-                            <div className="footer-logo">
-                                <span className="logo-text gradient-text">VBM</span>
-                                <span className="logo-subtitle">Interior</span>
-                            </div>
+                        {/* Column 1: Logo + Description + Social */}
+                        <div className="footer-col footer-col-about">
+                            <Link to="/" className="footer-logo-link">
+                                <img src={logoVbm} alt="VBM Interior" className="footer-logo-img" />
+                            </Link>
                             <p className="footer-description">
-                                Transforming spaces into stunning masterpieces. We specialize in creating
-                                innovative and elegant interiors that resonate with your personal style.
+                                Let us help you create a space that not only looks stunning but also
+                                enhances your everyday living. Contact us today to start your design
+                                journey.
                             </p>
-                            <div className="social-links">
-                                {socialLinks.map((social, index) => (
-                                    <a
-                                        key={index}
-                                        href={social.url}
-                                        className="social-link"
-                                        aria-label={social.label}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        {social.icon}
-                                    </a>
-                                ))}
+                            <div className="footer-social-section">
+                                <h4 className="footer-follow-title">Follow Us on</h4>
+                                <div className="footer-follow-divider" />
+                                <div className="social-links">
+                                    {socialLinks.map((social, index) => (
+                                        <a
+                                            key={index}
+                                            href={social.url}
+                                            className="social-link"
+                                            aria-label={social.label}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            {social.icon}
+                                        </a>
+                                    ))}
+                                </div>
                             </div>
                         </div>
 
+                        {/* Column 2: Quick Links */}
                         <div className="footer-col">
                             <h3 className="footer-title">Quick Links</h3>
                             <ul className="footer-links">
                                 {quickLinks.map((link, index) => (
                                     <li key={index}>
+                                        <span className="link-arrow">&raquo;</span>
                                         <Link to={link.path}>{link.label}</Link>
                                     </li>
                                 ))}
-                                <li><Link to="/blog">Blog</Link></li>
-                                <li><Link to="/contact">Contact</Link></li>
                             </ul>
                         </div>
 
+                        {/* Column 3: Services */}
                         <div className="footer-col">
-                            <h3 className="footer-title">Our Services</h3>
+                            <h3 className="footer-title">Services</h3>
                             <ul className="footer-links">
                                 {services.map((service, index) => (
                                     <li key={index}>
-                                        <Link to="/services">{service}</Link>
+                                        <span className="link-arrow">&raquo;</span>
+                                        <Link to={service.path}>{service.label}</Link>
                                     </li>
                                 ))}
                             </ul>
                         </div>
 
+                        {/* Column 4: Get in Touch */}
                         <div className="footer-col">
-                            <h3 className="footer-title">Contact Info</h3>
+                            <h3 className="footer-title">Get in Touch</h3>
                             <ul className="footer-contact">
                                 <li>
-                                    <FaMapMarkerAlt />
-                                    <span>123 Design Street, Chennai, Tamil Nadu 600001</span>
+                                    <span className="contact-icon">&#9742;</span>
+                                    <div className="contact-label">Phone:</div>
+                                    <a href="tel:+917397373587">+91 7397373587</a>
                                 </li>
                                 <li>
-                                    <FaPhone />
-                                    <a href="tel:+919876543210">+91 98765 43210</a>
+                                    <span className="contact-icon">&#9993;</span>
+                                    <div className="contact-label">E-mail:</div>
+                                    <a href="mailto:Vbminterior@gmail.com">Vbminterior@gmail.com</a>
                                 </li>
                                 <li>
-                                    <FaEnvelope />
-                                    <a href="mailto:info@vbminterior.com">info@vbminterior.com</a>
+                                    <span className="contact-icon">&#8862;</span>
+                                    <div className="contact-label">Address:</div>
+                                    <span>112, NSK Nagar Main Rd, NSK Nagar, Arumbakkam, Chennai, Tamil Nadu 600106, India</span>
                                 </li>
                             </ul>
-                            <Link to="/contact" className="btn btn-primary footer-cta">
-                                Get Free Quote
-                            </Link>
                         </div>
                     </div>
                 </div>
             </div>
 
+            {/* Copyright Bar */}
             <div className="footer-bottom">
                 <div className="container">
                     <div className="footer-bottom-content">
-                        <p>
-                            © {currentYear} VBM Interior. All rights reserved. Made with{' '}
-                            <FaHeart className="heart-icon" /> in Chennai
-                        </p>
-                        <div className="footer-bottom-links">
-                            <a href="#">Privacy Policy</a>
-                            <span>•</span>
-                            <a href="#">Terms of Service</a>
-                            <span>•</span>
-                            <a href="#">Sitemap</a>
-                        </div>
+                        <p>&copy; Copyright 2026 &ndash; VBM Interior | All Rights Reserved</p>
                     </div>
                 </div>
+            </div>
+
+            {/* Floating Social Sidebar */}
+            <div className="footer-floating-sidebar">
+                <a href="https://wa.me/917397373587" className="floating-btn floating-whatsapp" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+                    <FaWhatsapp />
+                </a>
+                <a href="mailto:Vbminterior@gmail.com" className="floating-btn floating-email" aria-label="Email">
+                    <FaEnvelope />
+                </a>
+                <a href="#" className="floating-btn floating-facebook" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                    <FaFacebookF />
+                </a>
             </div>
         </footer>
     );

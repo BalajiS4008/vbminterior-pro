@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- RSS Feed for VBM Interior Blog — https://vbminterior.com -->
+<!-- Generated: 2026-02-27 -->
+<!-- Place this file at: https://vbminterior.com/feed.xml -->
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+
+  <channel>
+    <title>VBM Interior Blog — Interior Design Tips &amp; Trends</title>
+    <link>https://vbminterior.com/blog/</link>
+    <description>Interior design tips, trends, and inspiration from VBM Interior, Chennai's trusted interior design company with 500+ completed projects.</description>
+    <language>en-in</language>
+    <lastBuildDate>Thu, 27 Feb 2026 00:00:00 +0530</lastBuildDate>
+    <managingEditor>Vbminterior@gmail.com (VBM Interior)</managingEditor>
+    <webMaster>Vbminterior@gmail.com (VBM Interior)</webMaster>
+    <copyright>Copyright 2008-2026 VBM Interior. All rights reserved.</copyright>
+    <category>Interior Design</category>
+    <category>Home Decor</category>
+    <category>Architecture</category>
+    <ttl>1440</ttl>
+    <image>
+      <url>https://vbminterior.com/assets/images/logovbm.webp</url>
+      <title>VBM Interior Blog</title>
+      <link>https://vbminterior.com/blog/</link>
+      <width>144</width>
+      <height>144</height>
+    </image>
+    <atom:link href="https://vbminterior.com/feed.xml" rel="self" type="application/rss+xml" />
+
+    <!-- Blog Post 1 -->
+    <item>
+      <title>Interior Design Trends 2024: What's Shaping Modern Homes</title>
+      <link>https://vbminterior.com/blog/interior-design-trends-2024/</link>
+      <description>Explore the latest interior design trends for 2024 — from sustainable materials and biophilic design to bold colors and smart home integration. Learn how to incorporate these trends into your Chennai home.</description>
+      <dc:creator>VBM Interior</dc:creator>
+      <pubDate>Mon, 15 Jan 2024 09:00:00 +0530</pubDate>
+      <guid isPermaLink="true">https://vbminterior.com/blog/interior-design-trends-2024/</guid>
+      <category>Design Trends</category>
+      <category>Home Interiors</category>
+    </item>
+
+    <!-- Blog Post 2 -->
+    <item>
+      <title>Multiple Wallpaper Design Ideas to Transform Your Space</title>
+      <link>https://vbminterior.com/blog/wallpaper-design-ideas/</link>
+      <description>Discover creative wallpaper design ideas for every room. From textured wallpapers for living rooms to subtle patterns for bedrooms — find the perfect wallpaper to elevate your interior.</description>
+      <dc:creator>VBM Interior</dc:creator>
+      <pubDate>Sat, 10 Feb 2024 09:00:00 +0530</pubDate>
+      <guid isPermaLink="true">https://vbminterior.com/blog/wallpaper-design-ideas/</guid>
+      <category>Wallpaper</category>
+      <category>Home Decor</category>
+    </item>
+
+    <!-- Blog Post 3 -->
+    <item>
+      <title>Small Spaces, Unique Style: Design Tips for Compact Homes</title>
+      <link>https://vbminterior.com/blog/small-spaces-unique-style/</link>
+      <description>Smart interior design tips for small spaces. Learn how to maximize every square foot with clever storage, multi-functional furniture, and visual tricks that make compact homes feel spacious.</description>
+      <dc:creator>VBM Interior</dc:creator>
+      <pubDate>Tue, 05 Mar 2024 09:00:00 +0530</pubDate>
+      <guid isPermaLink="true">https://vbminterior.com/blog/small-spaces-unique-style/</guid>
+      <category>Small Spaces</category>
+      <category>Design Tips</category>
+    </item>
+
+    <!-- Blog Post 4 -->
+    <item>
+      <title>Kitchen Design Guide: Plan Your Dream Kitchen</title>
+      <link>https://vbminterior.com/blog/kitchen-design-guide/</link>
+      <description>A comprehensive guide to designing your dream kitchen. Covers modular kitchen layouts, storage solutions, countertop materials, appliance placement, and ventilation planning for Indian kitchens.</description>
+      <dc:creator>VBM Interior</dc:creator>
+      <pubDate>Mon, 01 Apr 2024 09:00:00 +0530</pubDate>
+      <guid isPermaLink="true">https://vbminterior.com/blog/kitchen-design-guide/</guid>
+      <category>Kitchen Design</category>
+      <category>Modular Kitchen</category>
+    </item>
+
+  </channel>
+</rss>

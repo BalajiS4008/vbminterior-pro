@@ -1,0 +1,9 @@
+# Security Policy for VBM Interior
+# https://vbminterior.com/.well-known/security.txt
+# Standard: https://securitytxt.org/
+
+Contact: mailto:Vbminterior@gmail.com
+Contact: https://vbminterior.com/contact/
+Preferred-Languages: en, ta
+Canonical: https://vbminterior.com/.well-known/security.txt
+Expires: 2027-02-27T00:00:00.000Z

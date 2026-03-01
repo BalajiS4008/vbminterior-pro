@@ -346,6 +346,55 @@ img {
   margin-right: auto;
 }
 
+/* Section header with horizontal lines on both sides */
+.section-header-lined {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.section-header-lined h2 {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 36px;
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.section-header-lined h2::before,
+.section-header-lined h2::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #ddd;
+}
+
+.section-header-lined p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin: 0 auto;
+  max-width: 560px;
+}
+
+@media (max-width: 768px) {
+  .section-header-lined h2 {
+    font-size: 24px;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-header-lined h2 {
+    font-size: 20px;
+    gap: 0.75rem;
+  }
+
+  .section-header-lined h2::before,
+  .section-header-lined h2::after {
+    min-width: 20px;
+  }
+}
+
 .section-divider {
     width: 60px;
     height: 3px;

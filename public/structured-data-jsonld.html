@@ -1,0 +1,506 @@
+<!--
+  ============================================================
+  VBM Interior — Structured Data (JSON-LD) — REFERENCE FILE
+  Updated: 2026-02-27
+
+  NOTE: The LIVE structured data is in index.html <head>.
+  This file is a reference/backup. Always update index.html first.
+
+  LIVE SCHEMAS IN index.html:
+  1. LocalBusiness + HomeAndConstructionBusiness + ProfessionalService
+  2. Organization
+  3. WebSite
+  4. BreadcrumbList (homepage only)
+  5. Service Catalog with geo-targeted Chennai areas
+  6. FAQPage (10 questions)
+  7. Reviews (6 Google reviews)
+  8. VideoObject (hero video)
+  9. HowTo (5-step design process)
+
+  TESTING:
+  Validate at: https://search.google.com/test/rich-results
+  Also test at: https://validator.schema.org/
+  ============================================================
+-->
+
+<!-- ========================================================
+     1. LOCAL BUSINESS (InteriorDesignBusiness)
+     Primary structured data for Google Business Profile
+     ======================================================== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+  "@id": "https://vbminterior.com/#business",
+  "name": "VBM Interior",
+  "alternateName": "VBM Interior Design",
+  "url": "https://vbminterior.com",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://vbminterior.com/assets/images/logovbm.webp",
+    "width": 300,
+    "height": 100
+  },
+  "image": [
+    "https://vbminterior.com/assets/images/hero-bg.jpg",
+    "https://vbminterior.com/assets/images/portfolio-showcase.jpg"
+  ],
+  "description": "VBM Interior is Chennai's trusted interior design company with 500+ completed projects since 2008. We offer end-to-end residential and commercial interior design services with a comprehensive 10-year warranty.",
+  "telephone": "+917397373587",
+  "email": "Vbminterior@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "112 NSK Nagar Main Rd",
+    "addressLocality": "Chennai",
+    "addressRegion": "Tamil Nadu",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 13.06,
+    "longitude": 80.24
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Chennai",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Tamil Nadu"
+      }
+    },
+    {
+      "@type": "State",
+      "name": "Tamil Nadu",
+      "containedInPlace": {
+        "@type": "Country",
+        "name": "India"
+      }
+    }
+  ],
+  "priceRange": "$$$",
+  "currenciesAccepted": "INR",
+  "paymentAccepted": "Cash, UPI, Bank Transfer, Credit Card, Debit Card",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "09:00",
+      "closes": "19:00"
+    }
+  ],
+  "foundingDate": "2008",
+  "founder": {
+    "@type": "Person",
+    "name": "Vijay Kumar",
+    "jobTitle": "Founder & Lead Designer"
+  },
+  "numberOfEmployees": {
+    "@type": "QuantitativeValue",
+    "minValue": 10,
+    "maxValue": 50
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "bestRating": "5",
+    "worstRating": "1",
+    "ratingCount": "6",
+    "reviewCount": "6"
+  },
+  "sameAs": [
+    "https://www.instagram.com/vbminterior/",
+    "https://www.facebook.com/vbminterior/",
+    "https://www.youtube.com/@vbminterior",
+    "https://twitter.com/vbminterior",
+    "https://www.linkedin.com/company/vbminterior/"
+  ],
+  "knowsLanguage": ["en", "ta"],
+  "slogan": "Transforming Spaces, Creating Experiences"
+}
+</script>
+
+<!-- ========================================================
+     2. ORGANIZATION
+     Establishes VBM Interior as an organization entity
+     ======================================================== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://vbminterior.com/#organization",
+  "name": "VBM Interior",
+  "url": "https://vbminterior.com",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://vbminterior.com/assets/images/logovbm.webp",
+    "width": 300,
+    "height": 100
+  },
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+917397373587",
+      "email": "Vbminterior@gmail.com",
+      "contactType": "customer service",
+      "areaServed": "IN",
+      "availableLanguage": ["English", "Tamil"]
+    }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/vbminterior/",
+    "https://www.facebook.com/vbminterior/",
+    "https://www.youtube.com/@vbminterior",
+    "https://twitter.com/vbminterior",
+    "https://www.linkedin.com/company/vbminterior/"
+  ]
+}
+</script>
+
+<!-- ========================================================
+     3. WEBSITE with SearchAction
+     Enables Google Sitelinks Search Box
+     ======================================================== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://vbminterior.com/#website",
+  "name": "VBM Interior",
+  "url": "https://vbminterior.com",
+  "description": "Best interior designers in Chennai — 500+ projects, 10-year warranty, end-to-end interior design services.",
+  "publisher": {
+    "@id": "https://vbminterior.com/#organization"
+  },
+  "inLanguage": "en-IN",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://vbminterior.com/?s={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<!-- ========================================================
+     4. BREADCRUMB LIST
+     Helps Google display breadcrumb navigation in results
+     ======================================================== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://vbminterior.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "About Us",
+      "item": "https://vbminterior.com/about/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Services",
+      "item": "https://vbminterior.com/services/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Portfolio",
+      "item": "https://vbminterior.com/portfolio/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Blog",
+      "item": "https://vbminterior.com/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Contact Us",
+      "item": "https://vbminterior.com/contact/"
+    }
+  ]
+}
+</script>
+
+<!-- ========================================================
+     5. SERVICE
+     Individual interior design services offered
+     ======================================================== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://vbminterior.com/#services",
+  "serviceType": "Interior Design",
+  "provider": {
+    "@id": "https://vbminterior.com/#business"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Chennai"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Interior Design Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Living Room Design",
+          "description": "Custom furniture selection, color scheme consultation, lighting design, space optimization, and decor accessories for living rooms.",
+          "url": "https://vbminterior.com/services/"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Bedroom Design",
+          "description": "Wardrobe design, bed and headboard selection, ambient lighting, storage solutions, and luxury finishes for bedrooms.",
+          "url": "https://vbminterior.com/services/"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Kitchen Design",
+          "description": "Modular kitchen solutions, appliance integration, counter and cabinet design, storage optimization, and ventilation planning.",
+          "url": "https://vbminterior.com/services/"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Complete Interior Design",
+          "description": "End-to-end interior design services including space planning, material selection, project management, and quality assurance with 10-year warranty.",
+          "url": "https://vbminterior.com/services/"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Office & Commercial Design",
+          "description": "Workspace planning, ergonomic furniture, brand integration, meeting room design, and reception area design for offices.",
+          "url": "https://vbminterior.com/services/"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Furniture Design",
+          "description": "Custom furniture design with material selection, upholstery options, and space-specific designs with quality craftsmanship.",
+          "url": "https://vbminterior.com/services/"
+        }
+      }
+    ]
+  }
+}
+</script>
+
+<!-- ========================================================
+     6. FAQ PAGE
+     Rich FAQ results in Google Search
+     ======================================================== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What services does VBM Interior offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "VBM Interior offers comprehensive interior design services including residential design, kitchen design, bedroom design, living room design, bathroom renovation, and complete home interiors. We provide end-to-end solutions from concept to completion."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does an interior design project typically take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The timeline depends on the scope of the project. A single room redesign may take 2-4 weeks, while a complete home interior can take 6-12 weeks. We always strive to deliver on time as promised."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer free consultations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! We offer free initial design consultations where we understand your requirements, discuss your vision, and provide a preliminary estimate. Book your free consultation today."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the warranty on your work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We provide a comprehensive 10-year warranty on all our interior work. This covers manufacturing defects, material quality, and workmanship issues."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you work within a specific budget?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely! We believe luxury should be accessible to everyone. We work with various budgets and offer flexible packages to suit your financial requirements without compromising on quality."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you handle the complete project or just design?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We offer end-to-end services. From initial design concepts and 3D visualization to material procurement, execution, and final installation — we handle everything."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What areas do you serve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We primarily serve Chennai and surrounding areas in Tamil Nadu. However, we also take on projects in other cities based on scope and requirements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I get started with VBM Interior?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Getting started is easy! Simply click the 'Get Instant Quote' button or call us directly. We will schedule a free consultation to discuss your project requirements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide 3D designs before execution?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we provide detailed 3D visualizations and renderings so you can see exactly how your space will look before we begin the execution phase."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes VBM Interior different from others?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our combination of creative design expertise, quality materials, 10-year warranty, on-time delivery, and affordable pricing sets us apart. We treat every project as our own home."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- ========================================================
+     7. REVIEWS
+     Individual Google Reviews for rich review snippets
+     ======================================================== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://vbminterior.com/#business-reviews",
+  "name": "VBM Interior",
+  "review": [
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "mani kandan"
+      },
+      "datePublished": "2023-03-11",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4",
+        "bestRating": "5"
+      },
+      "reviewBody": "Quality work and good finishing done by vbm interior worker. Highly recommended those who looking for quality interior work."
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "samblessing r"
+      },
+      "datePublished": "2023-03-08",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "Such a beautiful work done by vbm interiors, on time with very professional labours. Very recommended service."
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "David Raj"
+      },
+      "datePublished": "2023-03-04",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "The quality of workmanship was evident in every aspect of the project. From the selection of materials to the installation of fixtures, everything was done with precision and care."
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Vinoz FX"
+      },
+      "datePublished": "2023-03-02",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "I would highly recommend VBM INTERIOR for anyone looking for interior design services. They were professional, reliable, and delivered exceptional results."
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Aruna Aruna"
+      },
+      "datePublished": "2023-03-02",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "I couldn't be happier with the final outcome of my home interior project. The designer really understood my vision and brought it to life beautifully."
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Balaji"
+      },
+      "datePublished": "2023-03-02",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "Responsibility towards customer satisfaction. Unbelievable for outputs. Reasonable price."
+    }
+  ]
+}
+</script>

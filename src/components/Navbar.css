@@ -111,6 +111,7 @@
     transition: all 0.3s ease;
     white-space: nowrap;
     text-decoration: none;
+    letter-spacing: 1.5px;
 }
 
 .nav-phone-icon {

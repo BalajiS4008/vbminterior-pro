@@ -1,0 +1,85 @@
+.design-tabs {
+    width: 100%;
+}
+
+.design-tabs-nav {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.design-tab-btn {
+    padding: 12px 28px;
+    border: 2px solid #FACC00;
+    border-radius: 15px;
+    background: #fff;
+    color: #0C0C0C;
+    font-family: 'Rosarivo', serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.design-tab-btn:hover {
+    background: #FAD22140;
+}
+
+.design-tab-btn.active {
+    background: #FAD221;
+    border-color: #FACC00;
+    color: #0C0C0C;
+}
+
+.design-tabs-content {
+    animation: tabFadeIn 0.4s ease;
+}
+
+@keyframes tabFadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.design-tab-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+}
+
+.design-tab-image {
+    border-radius: 8px;
+    overflow: hidden;
+    height: 250px;
+}
+
+.design-tab-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.design-tab-image:hover img {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .design-tabs-nav {
+        gap: 8px;
+    }
+
+    .design-tab-btn {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+
+    .design-tab-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .design-tab-image {
+        height: 200px;
+    }
+}

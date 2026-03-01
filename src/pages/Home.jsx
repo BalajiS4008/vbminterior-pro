@@ -48,6 +48,42 @@ const Home = ({ onOpenModal }) => {
         return () => clearTimeout(timer);
     }, []);
 
+    const [activeStep, setActiveStep] = useState(0);
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setActiveStep(prev => (prev + 1) % 5);
+        }, 2500);
+        return () => clearInterval(interval);
+    }, []);
+
+    // Character-by-character word cycling hook
+    const useCharCycle = (words, interval = 3000) => {
+        const [wordIndex, setWordIndex] = useState(0);
+        const [phase, setPhase] = useState('visible'); // 'visible' | 'exit' | 'enter'
+        const currentWord = words[wordIndex];
+
+        useEffect(() => {
+            const timer = setInterval(() => {
+                setPhase('exit');
+                const charCount = words[wordIndex].length;
+                const exitDuration = charCount * 60 + 200;
+                setTimeout(() => {
+                    setWordIndex(prev => (prev + 1) % words.length);
+                    setPhase('enter');
+                    const newCharCount = words[(wordIndex + 1) % words.length].length;
+                    setTimeout(() => setPhase('visible'), newCharCount * 60 + 200);
+                }, exitDuration);
+            }, interval);
+            return () => clearInterval(timer);
+        }, [wordIndex]);
+
+        return { currentWord, phase };
+    };
+
+    const chooseCycle = useCharCycle(['Choose', 'Trust'], 3000);
+    const dreamCycle = useCharCycle(['Dream', 'Perfect'], 3000);
+    const luxuryCycle = useCharCycle(['Luxury', 'Premium'], 3000);
+
     const whyChooseItems = [
         { image: customDesignImg, title: 'Custom Interior Designs', description: 'Tailored designs that reflect your unique style' },
         { image: endToEndImg, title: 'End to End Services', description: 'Complete project management from concept to completion' },
@@ -122,11 +158,11 @@ const Home = ({ onOpenModal }) => {
     ];
 
     const dreamHomeSteps = [
-        { step: '01', title: 'Meet our consultant', illustration: meetTeamImg },
-        { step: '02', title: 'Book Your Interior', illustration: bookInteriorImg },
-        { step: '03', title: 'Production', illustration: productionImg },
-        { step: '04', title: 'Site Execution', illustration: siteExecutionImg },
-        { step: '05', title: 'Handover on Time', illustration: handoverImg },
+        { step: '01', title: 'Meet Our Consultant', duration: '1–2 days', description: 'Discuss your vision, lifestyle, and budget with our expert designer. Get a personalized design concept.', illustration: meetTeamImg },
+        { step: '02', title: 'Book Your Interior', duration: '7 days', description: 'Finalize your design with detailed 3D renderings. Refine every detail until it matches your dream.', illustration: bookInteriorImg },
+        { step: '03', title: 'Production', duration: '30–45 days', description: 'Our skilled craftsmen create high-quality furniture and fixtures with rigorous quality checks.', illustration: productionImg },
+        { step: '04', title: 'Site Execution', duration: '15 days', description: 'Expert installation team brings your dream home to life with minimal disruption to your routine.', illustration: siteExecutionImg },
+        { step: '05', title: 'Handover on Time', duration: 'On schedule', description: 'Enjoy your new space with our 10-year warranty and dedicated after-support services.', illustration: handoverImg },
     ];
 
     const partners = [
@@ -145,18 +181,18 @@ const Home = ({ onOpenModal }) => {
     ];
 
     const faqItems = [
-        { question: 'What services does VBM Interior offer?', answer: 'VBM Interior offers comprehensive interior design services including residential design, kitchen design, bedroom design, living room design, bathroom renovation, and complete home interiors. We provide end-to-end solutions from concept to completion.' },
-        { question: 'How long does an interior design project typically take?', answer: 'The timeline depends on the scope of the project. A single room redesign may take 2-4 weeks, while a complete home interior can take 6-12 weeks. We always strive to deliver on time as promised.' },
-        { question: 'Do you offer free consultations?', answer: 'Yes! We offer free initial design consultations where we understand your requirements, discuss your vision, and provide a preliminary estimate. Book your free consultation today.' },
-        { question: 'What is the warranty on your work?', answer: 'We provide a comprehensive 10-year warranty on all our interior work. This covers manufacturing defects, material quality, and workmanship issues.' },
-        { question: 'Can you work within a specific budget?', answer: 'Absolutely! We believe luxury should be accessible to everyone. We work with various budgets and offer flexible packages to suit your financial requirements without compromising on quality.' },
-        { question: 'Do you handle the complete project or just design?', answer: 'We offer end-to-end services. From initial design concepts and 3D visualization to material procurement, execution, and final installation — we handle everything.' },
-        { question: 'What areas do you serve?', answer: 'We serve all of Chennai except North Chennai — including Adyar, Anna Nagar, T. Nagar, Velachery, OMR, ECR, Besant Nagar, Porur, Mylapore, Nungambakkam, Tambaram, Sholinganallur, and 30+ more areas. We also serve nearby districts: Kancheepuram, Chengalpattu, and parts of Tiruvallur.' },
-        { question: 'How do I get started with VBM Interior?', answer: 'Getting started is easy! Simply click the "Get Instant Quote" button or call us directly. We will schedule a free consultation to discuss your project requirements.' },
-        { question: 'Do you provide 3D designs before execution?', answer: 'Yes, we provide detailed 3D visualizations and renderings so you can see exactly how your space will look before we begin the execution phase.' },
-        { question: 'What makes VBM Interior different from others?', answer: 'Our combination of creative design expertise, quality materials, 10-year warranty, on-time delivery, and affordable pricing sets us apart. We treat every project as our own home.' },
-        { question: 'How much does interior design cost in Chennai?', answer: 'Complete 2BHK interiors start from ₹3.5 lakhs, 3BHK from ₹5.5 lakhs, and 4BHK from ₹8 lakhs. Modular kitchens start from ₹1.5 lakhs, and single room interiors from ₹75,000. We offer transparent pricing with no hidden costs.' },
-        { question: 'Do you provide interior design services in Anna Nagar and OMR?', answer: 'Yes! We have completed 100+ projects in Anna Nagar, OMR, ECR, and surrounding areas. Our team is familiar with the apartment layouts common in these neighborhoods and can provide free on-site consultations.' },
+        { question: 'How much does interior design cost in Chennai?', answer: 'Complete 2BHK interiors start from ₹3.5 lakhs, 3BHK from ₹5.5 lakhs, and 4BHK from ₹8 lakhs. Modular kitchens start from ₹1.5 lakhs, and single room interiors from ₹75,000. We offer transparent pricing with no hidden costs — the quote you receive is the price you pay.' },
+        { question: 'How long does an interior design project take to complete?', answer: 'A single room redesign typically takes 2-4 weeks, while a complete home interior takes 6-12 weeks depending on size and complexity. We commit to a fixed timeline at the start and guarantee on-time delivery with milestone updates throughout the project.' },
+        { question: 'Do you offer free consultations?', answer: 'Yes! We offer a completely free initial design consultation. Our designer visits your site, understands your requirements, takes measurements, discusses your vision and budget, and provides a detailed estimate — all at no cost and no obligation.' },
+        { question: 'What is the warranty on your interior work?', answer: 'We provide a comprehensive 10-year warranty covering manufacturing defects, material quality, and workmanship issues. This includes modular furniture, cabinetry, hardware, and finishes. Our after-sales service team handles any warranty claims promptly.' },
+        { question: 'What materials and brands do you use?', answer: 'We use only premium, ISI-certified materials from trusted brands like Hettich and Hafele (hardware), Century and Green Ply (plywood), Asian Paints and Berger (finishes), and Saint-Gobain (glass). All materials are termite-treated and moisture-resistant for Chennai\'s climate.' },
+        { question: 'Do you provide 3D designs before starting work?', answer: 'Yes, we create detailed 3D visualizations and photo-realistic renderings for every project before execution begins. You can see exactly how your space will look, request changes, and approve the design before any work starts on-site.' },
+        { question: 'Can you work within my budget without compromising quality?', answer: 'Absolutely. We offer flexible packages across different price points — from essential to premium. Our designers optimize material choices and layouts to maximize value within your budget. Luxury design doesn\'t have to mean expensive — it means smart planning.' },
+        { question: 'Do you handle only design or the full project execution?', answer: 'We provide complete end-to-end service — from initial concept and 3D design to material procurement, factory production, site execution, installation, and final handover. One team manages everything, so you have a single point of contact throughout.' },
+        { question: 'Is your interior design Vastu-compliant?', answer: 'Yes, we incorporate Vastu Shastra principles into our designs when requested. Our team is experienced in aligning room layouts, color schemes, furniture placement, and kitchen direction according to Vastu guidelines without compromising on modern aesthetics.' },
+        { question: 'Do you offer EMI or financing options?', answer: 'Yes, we offer easy EMI options and flexible payment plans through our banking partners. You can start your dream interior project with a minimal upfront payment and pay the rest in comfortable monthly installments at attractive interest rates.' },
+        { question: 'What areas in Chennai do you serve?', answer: 'We serve across Chennai including Adyar, Anna Nagar, T. Nagar, Velachery, OMR, ECR, Besant Nagar, Porur, Mylapore, Nungambakkam, Tambaram, Sholinganallur, and 30+ more areas. We also cover Kancheepuram, Chengalpattu, and parts of Tiruvallur district.' },
+        { question: 'How do I get started with VBM Interior?', answer: 'Getting started is simple! Call us at +91 7397373587, click "Get Instant Quote", or WhatsApp us. We\'ll schedule a free home visit consultation within 24-48 hours. After understanding your needs, we provide a detailed proposal with 3D designs and transparent pricing.' },
     ];
 
     const welcomeRef = useScrollReveal();
@@ -253,7 +289,15 @@ const Home = ({ onOpenModal }) => {
             <section className="section why-choose-section">
                 <div className="container">
                     <div className="section-header text-center">
-                        <h2>Why Choose VBM Interior</h2>
+                        <div className="title-line-wrapper">
+                            <h2>Why {' '}
+                                <span className="dream-word">
+                                    {chooseCycle.currentWord.split('').map((char, i) => (
+                                        <span key={`${chooseCycle.currentWord}-${i}`} className={`char-letter ${chooseCycle.phase}`} style={{ animationDelay: `${i * 60}ms` }}>{char}</span>
+                                    ))}
+                                </span>
+                                {' '} VBM Interior</h2>
+                        </div>
                         <p>Experience excellence in every detail of your project</p>
                     </div>
                     <Swiper
@@ -265,9 +309,10 @@ const Home = ({ onOpenModal }) => {
                         autoplay={{ delay: 2500, disableOnInteraction: false, pauseOnMouseEnter: true }}
                         pagination={{ clickable: true }}
                         breakpoints={{
-                            0: { slidesPerView: 3 },
-                            480: { slidesPerView: 4 },
-                            768: { slidesPerView: 5 },
+                            0: { slidesPerView: 2, spaceBetween: 8 },
+                            360: { slidesPerView: 3, spaceBetween: 8 },
+                            480: { slidesPerView: 3, spaceBetween: 10 },
+                            768: { slidesPerView: 4, spaceBetween: 10 },
                             1024: { slidesPerView: 5 },
                         }}
                         className="why-choose-swiper"
@@ -285,7 +330,11 @@ const Home = ({ onOpenModal }) => {
             <section className="section luxury-gallery-section">
                 <div className="container">
                     <div className="section-header text-center">
-                        <h2>Experience Luxury Living at an Affordable Price</h2>
+                        <h2>Experience <span className="dream-word">
+                            {luxuryCycle.currentWord.split('').map((char, i) => (
+                                <span key={`${luxuryCycle.currentWord}-${i}`} className={`char-letter ${luxuryCycle.phase}`} style={{ animationDelay: `${i * 60}ms` }}>{char}</span>
+                            ))}
+                        </span> Living at an Affordable Price</h2>
                         <p>At VBM Interior, we believe luxury interior design in Chennai should be accessible to everyone. Our approach combines elegance and functionality while staying budget-friendly, so you can enjoy a beautifully curated home in Chennai and Tamil Nadu without the premium price tag.</p>
                         <button className="btn" onClick={onOpenModal}>Get Quote</button>
                     </div>
@@ -337,7 +386,7 @@ const Home = ({ onOpenModal }) => {
             {/* 7. Design Categories Tabs */}
             <section className="section design-tabs-section scroll-reveal" ref={tabsRef}>
                 <div className="container">
-                    <div className="section-header text-center">
+                    <div className="section-header-lined">
                         <h2>Explore Our Design Categories</h2>
                         <p>Browse through our diverse portfolio of interior designs</p>
                     </div>
@@ -362,7 +411,7 @@ const Home = ({ onOpenModal }) => {
             {/* 9. Affordable Luxury */}
             <section className="section affordable-section">
                 <div className="container">
-                    <div className="section-header text-center">
+                    <div className="section-header-lined">
                         <h2>Affordable luxury home interiors</h2>
                         <p>Luxury interiors crafted to perfection at prices that suit every budget</p>
                     </div>
@@ -403,45 +452,57 @@ const Home = ({ onOpenModal }) => {
             {/* Dream Home Interiors Made Easy */}
             <section className="section dream-home-section">
                 <div className="container">
-                    <div className="section-header text-center">
-                        <h2>Dream Home Interiors Made Easy</h2>
+                    <div className="section-header-lined">
+                        <h2><span className="dream-word">
+                                {dreamCycle.currentWord.split('').map((char, i) => (
+                                    <span key={`${dreamCycle.currentWord}-${i}`} className={`char-letter ${dreamCycle.phase}`} style={{ animationDelay: `${i * 60}ms` }}>{char}</span>
+                                ))}
+                            </span> Home Interiors Made Easy</h2>
+                        <p>Your journey from consultation to handover in 5 simple steps</p>
                     </div>
-                    <Swiper
-                        modules={[Autoplay]}
-                        spaceBetween={20}
-                        slidesPerView={5}
-                        loop={true}
-                        speed={800}
-                        autoplay={{ delay: 3000, disableOnInteraction: false, pauseOnMouseEnter: true }}
-                        breakpoints={{
-                            0: { slidesPerView: 2, spaceBetween: 12 },
-                            480: { slidesPerView: 3, spaceBetween: 16 },
-                            768: { slidesPerView: 4, spaceBetween: 20 },
-                            1024: { slidesPerView: 5, spaceBetween: 24 },
-                        }}
-                        className="dream-home-swiper"
-                    >
-                        {dreamHomeSteps.map((item, index) => (
-                            <SwiperSlide key={index}>
-                                <div className="dream-home-slide">
-                                    <div className="dream-home-blob">
-                                        <img src={item.illustration} alt={item.title} loading="lazy" />
-                                    </div>
-                                    <div className="dream-home-label">
-                                        <span className="dream-home-step-num">{item.step}</span>
-                                        <span className="dream-home-step-title">{item.title}</span>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
+
+                    {/* Step headers with timeline */}
+                    <div className="dream-steps-header">
+                        {dreamHomeSteps.map((item, i) => (
+                            <div className={`dream-step-label${i <= activeStep ? ' active' : ''}`} key={item.step} onClick={() => setActiveStep(i)}>
+                                <span className="dream-step-num">Step {item.step}</span>
+                                <span className="dream-step-duration">{item.duration}</span>
+                            </div>
                         ))}
-                    </Swiper>
+                    </div>
+
+                    {/* Timeline connector */}
+                    <div className="dream-timeline">
+                        <div className="dream-timeline-line" />
+                        <div className="dream-timeline-progress" style={{ width: `${activeStep * 20}%` }} />
+                        {dreamHomeSteps.map((item, i) => (
+                            <div className={`dream-timeline-dot${i <= activeStep ? ' active' : ''}`} key={item.step} />
+                        ))}
+                    </div>
+
+                    {/* Step cards */}
+                    <div className="dream-steps-grid">
+                        {dreamHomeSteps.map((item, i) => (
+                            <div className={`dream-step-card${i === activeStep ? ' active' : ''}${i < activeStep ? ' completed' : ''}`} key={item.step} onClick={() => setActiveStep(i)}>
+                                <div className="dream-step-illustration">
+                                    <img src={item.illustration} alt={item.title} loading="lazy" />
+                                </div>
+                                <h4 className="dream-step-title">{item.title}</h4>
+                                <p className="dream-step-desc">{item.description}</p>
+                            </div>
+                        ))}
+                    </div>
+
+                    <div className="text-center" style={{ marginTop: '2rem' }}>
+                        <button onClick={onOpenModal} className="btn btn-primary">Get Free Estimate</button>
+                    </div>
                 </div>
             </section>
 
             {/* 11. Blog Posts — Design Guides */}
             <section className="section home-blog-section">
                 <div className="container">
-                    <div className="section-header text-center">
+                    <div className="section-header-lined">
                         <h2>Home Interior Design Guides: Tips & Inspiration</h2>
                         <p>Stay updated with the latest design trends and ideas</p>
                     </div>
@@ -465,7 +526,7 @@ const Home = ({ onOpenModal }) => {
 
                         {/* Smaller Cards */}
                         <div className="home-blog-list">
-                            {blogPostsData.slice(1).map((post) => (
+                            {blogPostsData.slice(1, 4).map((post) => (
                                 <Link to={`/blog/${post.slug}`} key={post.slug} className="home-blog-card">
                                     <div className="home-blog-card-img">
                                         <img src={post.image} alt={post.title} loading="lazy" />
@@ -497,7 +558,7 @@ const Home = ({ onOpenModal }) => {
             {/* Partners Section */}
             <section className="section partners-section">
                 <div className="container">
-                    <div className="section-header text-center">
+                    <div className="section-header-lined">
                         <h2>Check Out Our Partners!</h2>
                     </div>
                     <div className="partners-marquee">
@@ -519,7 +580,7 @@ const Home = ({ onOpenModal }) => {
             {/* 12. FAQ */}
             <section className="section faq-section">
                 <div className="container">
-                    <div className="section-header text-center">
+                    <div className="section-header-lined">
                         <h2>Frequently Asked Questions</h2>
                         <p>Find answers to common questions about our services</p>
                     </div>

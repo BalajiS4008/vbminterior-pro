@@ -1,0 +1,40 @@
+/* TEAM */
+
+Company: VBM Interior
+Role: Interior Design Company
+Location: Chennai, Tamil Nadu, India
+Website: https://vbminterior.com
+Contact: Vbminterior@gmail.com
+
+Founder: Vijay Kumar
+Role: Founder & Lead Designer
+Experience: 15+ years
+
+Senior Designer: Priya Menon
+Specialty: Residential and commercial spaces
+
+Project Manager: Arun Sharma
+Specialty: Timely delivery and quality execution
+
+Design Consultant: Divya Reddy
+Specialty: Modern and contemporary designs
+
+/* SITE */
+
+Last update: 2026-02-27
+Language: English, Tamil
+Doctype: HTML5
+Framework: React 19
+Build Tool: Vite 7
+Routing: React Router 7
+Standards: HTML5, CSS3, JavaScript ES6+
+IDE: Visual Studio Code
+
+/* SERVICES */
+
+Living Room Design
+Bedroom Design
+Kitchen Design
+Complete Interior Design
+Office & Commercial Design
+Furniture Design

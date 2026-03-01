@@ -1,64 +1,108 @@
-/* ===== Google Reviews Section ===== */
+/* ===== Google Reviews Section — Anbre-inspired layout ===== */
 .gr-section {
     padding: 5rem 0;
-    background: var(--bg-white);
+    background: var(--bg-white, #ffffff);
     overflow: hidden;
 }
 
-.gr-section .section-header h2 {
-    font-size: 34px;
+.gr-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 3rem;
+}
+
+/* ===== Title with horizontal line dividers on both sides ===== */
+.gr-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
     margin-bottom: 2.5rem;
 }
 
-/* Layout: summary badge left + cards right — full viewport width */
-.gr-layout {
-    display: flex;
-    gap: 1.25rem;
-    align-items: flex-start;
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    padding-left: max(1rem, calc((70vw - 1200px) / 2));
+.gr-title-wrapper::before,
+.gr-title-wrapper::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #ddd;
 }
 
-/* ===== Left Summary Badge ===== */
+.gr-title-wrapper h2 {
+    font-size: 34px;
+    color: var(--text-primary, #0C0C0C);
+    white-space: nowrap;
+    margin: 0;
+    text-align: center;
+}
+
+/* ===== Main Layout: left summary + right carousel ===== */
+.gr-layout {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+/* ===== Left Summary Panel ===== */
 .gr-summary {
     flex-shrink: 0;
-    width: 140px;
+    width: 260px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    text-align: left;
-    padding: 0.5rem 0;
+    padding: 1.5rem;
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 12px;
 }
 
-.gr-label {
-    font-size: 1.35rem;
+.gr-company-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary, #0C0C0C);
+    line-height: 1.45;
+    margin: 0 0 1rem;
+}
+
+.gr-rating-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.4rem;
+}
+
+.gr-rating-number {
+    font-size: 2rem;
     font-weight: 700;
-    color: #0C0C0C;
-    letter-spacing: 0.04em;
-    margin-bottom: 0.5rem;
+    color: var(--text-primary, #0C0C0C);
+    line-height: 1;
 }
 
 .gr-summary-stars {
     display: flex;
     gap: 2px;
-    margin-bottom: 0.6rem;
 }
 
 .gr-summary-stars .gr-star {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     color: #f4b400;
 }
 
 .gr-based {
     font-size: 0.9rem;
     color: #555;
-    margin: 0 0 0.75rem;
+    margin: 0.25rem 0 1rem;
 }
 
 .gr-based strong {
-    color: #0C0C0C;
-    text-decoration: underline;
+    color: var(--text-primary, #0C0C0C);
+}
+
+.gr-powered {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+    margin-bottom: 1.25rem;
 }
 
 .gr-google-logo {
@@ -66,41 +110,78 @@
     height: auto;
 }
 
-/* ===== Cards Container ===== */
-.gr-cards {
-    display: flex;
-    gap: 1rem;
+.gr-powered-text {
+    font-size: 0.78rem;
+    color: #888;
+}
+
+.gr-powered-text strong {
+    color: #555;
+}
+
+/* "Review us on G" button */
+.gr-review-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #FAD221;
+    color: var(--text-primary, #0C0C0C);
+    border: 2px solid #FACC00;
+    border-radius: 25px;
+    padding: 0.55rem 1.25rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    white-space: nowrap;
+}
+
+.gr-review-btn:hover {
+    background: #e6c01e;
+    transform: translateY(-1px);
+}
+
+.gr-review-btn-icon {
+    flex-shrink: 0;
+}
+
+/* ===== Right — Cards Carousel Wrapper ===== */
+.gr-cards-wrapper {
     flex: 1;
     min-width: 0;
-    padding-right: 1.5rem;
+    position: relative;
+    padding: 0 2.5rem;
+}
+
+.gr-swiper {
+    overflow: hidden;
+    padding-bottom: 0.5rem;
 }
 
 /* ===== Individual Review Card ===== */
 .gr-card {
-    flex: 1 1 0;
-    min-width: 0;
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    background: rgba(45, 45, 45, 0.85);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: #ffffff;
+    border: 1px solid #eee;
     border-radius: 12px;
-    padding: 1.25rem 1rem;
+    padding: 1.25rem;
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
+    min-height: 220px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .gr-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
 /* Card Header: avatar + name/date + Google icon */
 .gr-card-header {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.6rem;
 }
 
 .gr-card-avatar-wrap {
@@ -108,8 +189,8 @@
 }
 
 .gr-card-avatar {
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     object-fit: cover;
     display: flex;
@@ -119,7 +200,7 @@
 
 .gr-card-avatar-initial {
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.05rem;
     font-weight: 700;
 }
 
@@ -131,7 +212,7 @@
 }
 
 .gr-card-name {
-    color: #fff;
+    color: #1a73e8;
     font-size: 0.95rem;
     font-weight: 600;
     white-space: nowrap;
@@ -141,12 +222,13 @@
 
 .gr-card-date {
     color: #999;
-    font-size: 0.8rem;
+    font-size: 0.78rem;
+    margin-top: 2px;
 }
 
 .gr-card-g {
-    width: 26px;
-    height: 26px;
+    width: 24px;
+    height: 24px;
     flex-shrink: 0;
     border-radius: 50%;
 }
@@ -164,7 +246,7 @@
 }
 
 .gr-card-stars .gr-star-empty {
-    color: #666;
+    color: #ddd;
 }
 
 .gr-verified {
@@ -175,9 +257,9 @@
 
 /* Review text */
 .gr-card-text {
-    color: #e0e0e0;
-    font-size: 0.92rem;
-    line-height: 1.65;
+    color: var(--text-secondary, #1F1F1F);
+    font-size: 0.9rem;
+    line-height: 1.6;
     margin: 0;
     text-align: left;
     display: -webkit-box;
@@ -187,57 +269,174 @@
 }
 
 .gr-read-more {
-    color: #90caf9;
+    color: #1a73e8;
     font-size: 0.82rem;
     cursor: pointer;
     align-self: flex-start;
+    font-weight: 500;
+    text-decoration: none;
 }
 
 .gr-read-more:hover {
     text-decoration: underline;
 }
 
-/* ===== CTA button below reviews ===== */
-.gr-cta-wrap {
-    text-align: center;
+/* ===== Custom Swiper Navigation Arrows ===== */
+.gr-swiper-prev,
+.gr-swiper-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: background 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.gr-swiper-prev {
+    left: 0;
+}
+
+.gr-swiper-next {
+    right: 0;
+}
+
+.gr-swiper-prev:hover,
+.gr-swiper-next:hover {
+    background: #FAD221;
+    border-color: #FACC00;
+    color: var(--text-primary, #0C0C0C);
+    box-shadow: 0 4px 12px rgba(250, 210, 33, 0.3);
+}
+
+.gr-swiper-prev.swiper-button-disabled,
+.gr-swiper-next.swiper-button-disabled {
+    opacity: 0.35;
+    cursor: default;
+    pointer-events: none;
+}
+
+/* ===== Custom Swiper Pagination Dots ===== */
+.gr-swiper-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 1.25rem;
+}
+
+.gr-swiper-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ccc;
+    opacity: 1;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.gr-swiper-pagination .swiper-pagination-bullet-active {
+    background: #FAD221;
+    transform: scale(1.2);
+}
+
+/* ===== Bottom CTA Row ===== */
+.gr-cta-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
     margin-top: 2.5rem;
 }
 
+.gr-btn-outline {
+    background: transparent;
+    color: var(--text-primary, #0C0C0C);
+    border: 2px solid #FACC00;
+    border-radius: 15px;
+    padding: 0.65rem 1.75rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.gr-btn-outline:hover {
+    background: #FAD221;
+    color: var(--text-primary, #0C0C0C);
+    transform: translateY(-1px);
+}
+
+.gr-btn-quote {
+    background: #FAD221;
+    color: var(--text-primary, #0C0C0C);
+    border: 2px solid #FACC00;
+    border-radius: 15px;
+    padding: 0.65rem 1.75rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.gr-btn-quote:hover {
+    background: #e6c01e;
+    transform: translateY(-1px);
+}
+
 /* ===== Responsive ===== */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+    .gr-container {
+        padding: 0 1.5rem;
+    }
+
     .gr-section {
         padding: 3.5rem 0;
     }
 
-    .gr-section .section-header h2 {
+    .gr-title-wrapper h2 {
         font-size: 24px;
-        margin-bottom: 1.5rem;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .gr-title-wrapper {
+        gap: 1rem;
     }
 
     .gr-layout {
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
         gap: 1.5rem;
-        width: 100%;
-        margin-left: 0;
-        padding-left: 1rem;
-        padding-right: 0;
     }
 
     .gr-summary {
-        width: auto;
+        width: 100%;
         flex-direction: row;
         flex-wrap: wrap;
+        align-items: center;
         justify-content: center;
-        gap: 0.5rem 1rem;
-        padding: 1rem;
+        text-align: center;
+        gap: 0.5rem 1.25rem;
+        padding: 1.25rem;
     }
 
-    .gr-label {
+    .gr-company-name {
         width: 100%;
+        text-align: center;
+        margin-bottom: 0.5rem;
     }
 
-    .gr-summary-stars {
+    .gr-rating-row {
         margin-bottom: 0;
     }
 
@@ -245,43 +444,68 @@
         margin: 0;
     }
 
-    .gr-cards {
+    .gr-powered {
+        align-items: center;
+        margin-bottom: 0.75rem;
         width: 100%;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        scroll-snap-type: x mandatory;
-        padding-right: 1rem;
     }
 
-    .gr-cards::-webkit-scrollbar {
-        height: 3px;
+    .gr-review-btn {
+        margin: 0 auto;
     }
 
-    .gr-cards::-webkit-scrollbar-thumb {
-        background: #ccc;
-        border-radius: 3px;
+    .gr-cards-wrapper {
+        padding: 0 2.5rem;
     }
 
-    .gr-card {
-        flex: 0 0 220px;
-        min-width: 220px;
-        scroll-snap-align: start;
+    .gr-cta-row {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .gr-btn-outline,
+    .gr-btn-quote {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
     }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-    .gr-layout {
-        padding-left: 1.5rem;
+@media (max-width: 520px) {
+    .gr-container {
+        padding: 0 1rem;
     }
 
-    .gr-cards {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        padding-right: 1.5rem;
+    .gr-title-wrapper::before,
+    .gr-title-wrapper::after {
+        display: none;
+    }
+
+    .gr-title-wrapper {
+        justify-content: center;
+    }
+
+    .gr-title-wrapper h2 {
+        font-size: 22px;
+    }
+
+    .gr-summary {
+        padding: 1rem;
+    }
+
+    .gr-cards-wrapper {
+        padding: 0 2rem;
+    }
+
+    .gr-swiper-prev,
+    .gr-swiper-next {
+        width: 32px;
+        height: 32px;
+        font-size: 0.75rem;
     }
 
     .gr-card {
-        flex: 0 0 190px;
-        min-width: 190px;
+        padding: 1rem;
+        min-height: 200px;
     }
 }
