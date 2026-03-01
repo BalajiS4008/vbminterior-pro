@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, useMemo } from 'react';
-import { FaArrowRight, FaCalendar, FaUser, FaClock, FaTh, FaList } from 'react-icons/fa';
+import { FaArrowRight, FaArrowLeft, FaCalendar, FaUser, FaClock, FaTh, FaList } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import blogPosts from '../data/blogData';
 import './Blog.css';
@@ -7,6 +7,8 @@ import './Blog.css';
 const Blog = () => {
     const [activeCategory, setActiveCategory] = useState('All');
     const [viewMode, setViewMode] = useState('grid');
+    const [currentPage, setCurrentPage] = useState(1);
+    const postsPerPage = 6;
 
     // Extract unique categories from blog data
     const categories = useMemo(() => {
@@ -20,9 +22,23 @@ const Blog = () => {
         return blogPosts.filter(p => p.category === activeCategory);
     }, [activeCategory]);
 
+    // Reset to page 1 when category changes
+    useEffect(() => { setCurrentPage(1); }, [activeCategory]);
+
     // Featured post — only when showing all
     const featuredPost = activeCategory === 'All' ? blogPosts[0] : null;
-    const gridPosts = featuredPost ? filteredPosts.slice(1) : filteredPosts;
+    const allGridPosts = featuredPost ? filteredPosts.slice(1) : filteredPosts;
+
+    // Pagination
+    const totalPages = Math.ceil(allGridPosts.length / postsPerPage);
+    const startIdx = (currentPage - 1) * postsPerPage;
+    const gridPosts = allGridPosts.slice(startIdx, startIdx + postsPerPage);
+
+    const gridSectionRef = useRef(null);
+    const handlePageChange = (page) => {
+        setCurrentPage(page);
+        gridSectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    };
 
     // Scroll-reveal for blog cards
     const cardRefs = useRef([]);
@@ -45,7 +61,7 @@ const Blog = () => {
         );
         cardRefs.current.forEach(el => el && observer.observe(el));
         return () => observer.disconnect();
-    }, [activeCategory, viewMode]);
+    }, [activeCategory, viewMode, currentPage]);
 
     return (
         <div className="blog-page">
@@ -134,7 +150,7 @@ const Blog = () => {
             )}
 
             {/* Blog Grid / List */}
-            <section className="section blog-grid-section">
+            <section className="section blog-grid-section" ref={gridSectionRef}>
                 <div className="container">
                     {!featuredPost && (
                         <div className="section-header text-center">
@@ -174,6 +190,43 @@ const Blog = () => {
                                 </Link>
                             ))}
                         </div>
+                    )}
+
+                    {/* Pagination */}
+                    {totalPages > 1 && (
+                        <nav className="blog-pagination" aria-label="Blog pagination">
+                            <button
+                                className="pagination-btn pagination-prev"
+                                onClick={() => handlePageChange(currentPage - 1)}
+                                disabled={currentPage === 1}
+                                aria-label="Previous page"
+                            >
+                                <FaArrowLeft /> Prev
+                            </button>
+
+                            <div className="pagination-pages">
+                                {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
+                                    <button
+                                        key={page}
+                                        className={`pagination-num ${currentPage === page ? 'active' : ''}`}
+                                        onClick={() => handlePageChange(page)}
+                                        aria-label={`Page ${page}`}
+                                        aria-current={currentPage === page ? 'page' : undefined}
+                                    >
+                                        {page}
+                                    </button>
+                                ))}
+                            </div>
+
+                            <button
+                                className="pagination-btn pagination-next"
+                                onClick={() => handlePageChange(currentPage + 1)}
+                                disabled={currentPage === totalPages}
+                                aria-label="Next page"
+                            >
+                                Next <FaArrowRight />
+                            </button>
+                        </nav>
                     )}
                 </div>
             </section>
