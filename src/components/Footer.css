@@ -150,7 +150,7 @@
     width: auto;
     max-width: 300px;
     object-fit: contain;
-    filter: url(#footer-logo-filter) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
 }
 
 .footer-description {

@@ -8,7 +8,7 @@ import {
     FaEnvelope,
     FaWhatsapp
 } from 'react-icons/fa';
-import logoVbm from '../assets/images/logovbm.webp';
+import logoVbmFooter from '../assets/images/logovbm-footer.png';
 import './Footer.css';
 
 const Footer = ({ onOpenModal }) => {
@@ -37,20 +37,6 @@ const Footer = ({ onOpenModal }) => {
 
     return (
         <footer className="footer">
-            {/* SVG filter: dark text → white, gold house → preserved yellow */}
-            <svg width="0" height="0" style={{ position: 'absolute' }}>
-                <defs>
-                    <filter id="footer-logo-filter" colorInterpolationFilters="sRGB">
-                        <feComponentTransfer>
-                            <feFuncR type="table" tableValues="1 0.95 0.9 0.85 0.83" />
-                            <feFuncG type="table" tableValues="1 0.95 0.85 0.7 0.63" />
-                            <feFuncB type="table" tableValues="1 0.95 0.6 0.2 0.09" />
-                            <feFuncA type="identity" />
-                        </feComponentTransfer>
-                    </filter>
-                </defs>
-            </svg>
-
             {/* CTA Banner with dark geometric background */}
             <div className="footer-cta-banner">
                 <div className="footer-cta-overlay" />
@@ -71,7 +57,7 @@ const Footer = ({ onOpenModal }) => {
                         {/* Column 1: Logo + Description + Social */}
                         <div className="footer-col footer-col-about">
                             <Link to="/" className="footer-logo-link">
-                                <img src={logoVbm} alt="VBM Interior" className="footer-logo-img" />
+                                <img src={logoVbmFooter} alt="VBM Interior" className="footer-logo-img" />
                             </Link>
                             <p className="footer-description">
                                 Let us help you create a space that not only looks stunning but also

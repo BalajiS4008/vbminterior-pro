@@ -470,11 +470,16 @@
     left: 0;
     width: 100%;
     height: calc(100vh - 70px);
+    height: calc(100dvh - 70px);
     border-radius: 16px 16px 0 0;
   }
 
+  .chatbot-input-area {
+    padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+  }
+
   .chatbot-bubble {
-    bottom: 16px;
+    bottom: calc(16px + env(safe-area-inset-bottom, 0px));
     right: 16px;
     width: 56px;
     height: 56px;
@@ -483,5 +488,10 @@
   .chatbot-bubble-icon {
     width: 28px;
     height: 28px;
+  }
+
+  /* Hide floating bubble when chat is open — header close button is used instead */
+  .chatbot-window ~ .chatbot-bubble {
+    display: none;
   }
 }
