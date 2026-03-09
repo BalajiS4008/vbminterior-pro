@@ -12,10 +12,14 @@ You are an expert SEO consultant and AI discoverability specialist. I need you t
 - **Website URL**: https://vbminterior.com
 - **Business Name**: VBM Interior
 - **Business Type**: Interior Design Company
-- **Location**: Chennai, Tamil Nadu, India
-- **Founded**: 2008
-- **Projects Completed**: 500+
-- **Warranty**: 10 years on all interior work
+- **Location**: Arumbakkam & Tambaram, Chennai, Tamil Nadu, India
+- **Founded**: 2017 by Mohan Kumar S
+- **Experience**: 8+ years
+- **Projects Completed**: 200+
+- **Team**: 30+ technical professionals
+- **Warranty**: Up to 10 years (Standard 5yr, Premium 7yr, Luxury 10yr)
+- **Free Maintenance**: 1 year included with all packages
+- **Tagline**: "PRECISION. PERFECTION.. PROMISE..."
 - **Services/Products**:
   1. Living Room Design — Custom furniture selection, color scheme consultation, lighting design, space optimization, decor and accessories
   2. Bedroom Design — Wardrobe design, bed and headboard selection, ambient lighting, storage solutions, luxury finishes
@@ -25,28 +29,42 @@ You are an expert SEO consultant and AI discoverability specialist. I need you t
   6. Furniture Design — Custom furniture, material selection, upholstery options, space-specific designs, quality craftsmanship
 - **Target Audience**: Homeowners, apartment buyers (2BHK, 3BHK, 4BHK, 5+ BHK/Villa/Penthouse), office owners, and commercial property owners in Chennai and Tamil Nadu looking for interior design services
 - **Target Keywords**: best interior designers in Chennai, interior design Chennai, home interior design Chennai, modular kitchen Chennai, living room design Chennai, bedroom interior design Chennai, office interior design Chennai, affordable interior designers Chennai, luxury home interiors Chennai, VBM Interior, interior decorators Chennai, kitchen design Chennai, wardrobe design Chennai, best interiors in Chennai, interior design company Chennai
-- **Phone Number**: +91 7397373587  *(NOTE: Replace with actual phone number)*
-- **Email**: Vbminterior@gmail.com
-- **Physical Address**: 112 NSK Nagar Main Rd, Chennai, Tamil Nadu, India *(NOTE: Verify and add PIN code)*
+- **Phone Number 1**: +91 73 97 37 35 87
+- **Phone Number 2**: +91 99 4050 9095
+- **Email**: vbminterior@gmail.com
+- **Office 1**: Arumbakkam, Chennai, Tamil Nadu, India
+- **Office 2**: Tambaram, Chennai, Tamil Nadu, India
 - **Google Maps Coordinates**: 13.06°N, 80.24°E (13°03'36.0"N 80°14'24.0"E)
 - **Social Media URLs**:
-  - Instagram: *(TODO: Add actual URL)*
-  - Facebook: *(TODO: Add actual URL)*
-  - YouTube: *(TODO: Add actual URL)*
-  - Twitter/X: *(TODO: Add actual URL)*
-  - LinkedIn: *(TODO: Add actual URL)*
+  - Instagram: https://www.instagram.com/vbminterior/
+  - Facebook: https://www.facebook.com/vbminterior/
+  - YouTube: https://www.youtube.com/@vbminterior
+  - Twitter/X: https://twitter.com/vbminterior
+  - LinkedIn: https://www.linkedin.com/company/vbminterior/
 - **Business Hours**: Monday - Saturday: 9AM - 7PM, Sunday: Closed
 - **Languages**: English, Tamil
 - **Price Range**: $$$ (Budget to Luxury)
 
 ## Company Overview:
-VBM Interior is a Chennai-based interior design company founded in 2008. Starting as a small studio, VBM Interior has grown into one of Chennai's most trusted interior design firms with over 500 completed projects. The company specializes in creating innovative and elegant spaces — from cozy apartments to sprawling commercial spaces. VBM Interior offers end-to-end solutions from concept to completion, combining creative design with practical functionality. All projects come with a comprehensive 10-year warranty.
+VBM Interior is a Chennai-based interior design company founded in 2017 by Mohan Kumar S. With 8+ years of experience and a team of 30+ technical professionals, VBM Interior has grown into one of Chennai's most trusted interior design firms with over 200 completed projects. The company operates from two offices in Arumbakkam and Tambaram, specializing in creating innovative and elegant spaces — from cozy apartments to sprawling commercial spaces. VBM Interior offers end-to-end solutions from concept to completion, combining creative design with practical functionality. All projects include 1-year free maintenance, floor protection during work, and daily site cleaning. Packages range from Standard (5-year warranty) to Premium (7-year) to Luxury (10-year warranty).
+
+## Core Team:
+- **Mohan Kumar S** — Founder & Managing Director
+- **Thamizh Priya N** — Lead Designer
+- **Selva Kumar B** — Project Manager
+- **Gandhi M** — 3D Visualization Artist
+- **Balaji S** — Client Consultant
+
+## Packages & Pricing:
+- **Standard Package** (5-year warranty): 2BHK ₹3–4L | 3BHK ₹5–6L
+- **Premium Package** (7-year warranty): 2BHK ₹4–6L | 3BHK ₹7–9L
+- **Luxury Package** (10-year warranty): 2BHK ₹7–10L | 3BHK ₹10–13L
 
 ## Core Values:
-- **Innovation** — Constantly pushing boundaries with creative design solutions
+- **Precision** — Meticulous attention to detail in every project
 - **Quality** — Excellence in every detail, from concept to completion
 - **Client-Focused** — Client vision and satisfaction are top priorities
-- **Passion** — Love for design shows in every project
+- **Trust** — Transparent processes and long-term relationships
 
 ## Mission:
 To transform ordinary spaces into extraordinary experiences through innovative design, exceptional craftsmanship, and personalized service.
@@ -59,7 +77,9 @@ To be the most trusted interior design firm, known for creativity, quality, and 
 - Transparent Pricing — No hidden costs, clear upfront pricing
 - Quality Materials — Finest materials from trusted suppliers
 - Timely Completion — Projects completed within agreed timeline
-- After-Sales Support — Ongoing support and 10-year warranty
+- After-Sales Support — 1-year free maintenance and up to 10-year warranty
+- Floor Protection — We protect your existing flooring during all work
+- Daily Site Cleaning — Clean worksite maintained throughout the project
 - Sustainable Design — Eco-friendly materials and practices
 
 ## Design Process:
@@ -79,12 +99,20 @@ To be the most trusted interior design firm, known for creativity, quality, and 
 - Blog: https://vbminterior.com/blog/
 - Contact Us: https://vbminterior.com/contact/
 
-## Blog Posts (if any):
-- Interior Design Trends 2024: https://vbminterior.com/blog/interior-design-trends-2024/
-- Multiple Wallpaper Design Ideas: https://vbminterior.com/blog/wallpaper-design-ideas/
-- Small Spaces, Unique Style: https://vbminterior.com/blog/small-spaces-unique-style/
-- Kitchen Design Guide: https://vbminterior.com/blog/kitchen-design-guide/
-*(NOTE: Verify actual blog URLs from the live WordPress site)*
+## Blog Posts (13 posts, all 2026):
+- Interior Design Trends 2026: https://vbminterior.com/blog/interior-design-trends-2026/
+- Multiple Wallpaper Design Ideas: https://vbminterior.com/blog/multiple-wallpaper-design-ideas/
+- Small Spaces, Big Style: https://vbminterior.com/blog/small-spaces-big-style/
+- Creating Affordable Luxury: https://vbminterior.com/blog/creating-affordable-luxury/
+- Best Interior Designers Chennai 2026: https://vbminterior.com/blog/best-interior-designers-chennai-2026/
+- Modular Kitchen Design Chennai Guide: https://vbminterior.com/blog/modular-kitchen-design-chennai-guide/
+- Interior Design Cost Chennai 2026: https://vbminterior.com/blog/interior-design-cost-chennai-2026/
+- Vastu-Compliant Interior Design Chennai: https://vbminterior.com/blog/vastu-compliant-interior-design-chennai/
+- False Ceiling Designs: https://vbminterior.com/blog/false-ceiling-designs-types-costs-ideas/
+- Wardrobe Design Ideas: https://vbminterior.com/blog/wardrobe-design-ideas-storage-solutions/
+- Interior Design Mistakes: https://vbminterior.com/blog/interior-design-mistakes-waste-money/
+- Interior Design Timeline: https://vbminterior.com/blog/interior-design-timeline-how-long/
+- Living Room Interior Design Ideas: https://vbminterior.com/blog/living-room-interior-design-ideas-indian-homes/
 
 ## Customer Reviews (Google Reviews — 5.0 rating, 6 reviews):
 
@@ -118,7 +146,7 @@ To be the most trusted interior design firm, known for creativity, quality, and 
    Yes! We offer free initial design consultations where we understand your requirements, discuss your vision, and provide a preliminary estimate. Book your free consultation today.
 
 4. **What is the warranty on your work?**
-   We provide a comprehensive 10-year warranty on all our interior work. This covers manufacturing defects, material quality, and workmanship issues.
+   We provide up to 10-year warranty depending on package: Standard (5 years), Premium (7 years), Luxury (10 years). All packages include 1-year free maintenance.
 
 5. **Can you work within a specific budget?**
    Absolutely! We believe luxury should be accessible to everyone. We work with various budgets and offer flexible packages to suit your financial requirements without compromising on quality.
@@ -136,7 +164,7 @@ To be the most trusted interior design firm, known for creativity, quality, and 
    Yes, we provide detailed 3D visualizations and renderings so you can see exactly how your space will look before we begin the execution phase.
 
 10. **What makes VBM Interior different from others?**
-    Our combination of creative design expertise, quality materials, 10-year warranty, on-time delivery, and affordable pricing sets us apart. We treat every project as our own home.
+    Founded in 2017 by Mohan Kumar S, our 8+ years of expertise, 30+ technical professionals, 1-year free maintenance, floor protection during work, daily site cleaning, and up to 10-year warranty set us apart. We treat every project as our own home.
 
 ---
 
@@ -241,8 +269,8 @@ Provide the homepage meta tags as active code and other pages as commented templ
 ---
 
 ## IMPORTANT REMINDERS:
-- Fill the `telephone` field with actual phone number (currently +91 1234567890 — NEEDS UPDATING)
-- Fill `sameAs` array with actual social media URLs (currently placeholders — NEEDS UPDATING)
+- Phone numbers: +91 73 97 37 35 87 and +91 99 4050 9095
+- Social media URLs are filled in above
 - Update `lastmod` dates in sitemap to current date
 - If using Yoast/Rank Math WordPress plugin, let it auto-generate sitemap.xml instead of manual file
 - Create proper favicon files in multiple sizes (16x16, 32x32, 180x180, 192x192, 512x512)

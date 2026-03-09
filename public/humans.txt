@@ -2,26 +2,30 @@
 
 Company: VBM Interior
 Role: Interior Design Company
-Location: Chennai, Tamil Nadu, India
+Location: Arumbakkam & Tambaram, Chennai, Tamil Nadu, India
 Website: https://vbminterior.com
-Contact: Vbminterior@gmail.com
+Contact: vbminterior@gmail.com
+Phone: +91 73 97 37 35 87 | +91 99 4050 9095
 
-Founder: Vijay Kumar
-Role: Founder & Lead Designer
-Experience: 15+ years
+Founder: Mohan Kumar S
+Role: Founder & Managing Director
+Experience: 8+ years
 
-Senior Designer: Priya Menon
-Specialty: Residential and commercial spaces
+Lead Designer: Thamizh Priya N
+Specialty: Residential and commercial design
 
-Project Manager: Arun Sharma
+Project Manager: Selva Kumar B
 Specialty: Timely delivery and quality execution
 
-Design Consultant: Divya Reddy
-Specialty: Modern and contemporary designs
+3D Artist: Gandhi M
+Specialty: 3D visualization and rendering
+
+Client Consultant: Balaji S
+Specialty: Client relations and project consulting
 
 /* SITE */
 
-Last update: 2026-02-27
+Last update: 2026-03-10
 Language: English, Tamil
 Doctype: HTML5
 Framework: React 19

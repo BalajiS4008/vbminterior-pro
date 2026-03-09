@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- RSS Feed for VBM Interior Blog — https://vbminterior.com -->
-<!-- Generated: 2026-02-27 -->
-<!-- Place this file at: https://vbminterior.com/feed.xml -->
+<!-- Updated: 2026-03-10 -->
 <rss version="2.0"
   xmlns:atom="http://www.w3.org/2005/Atom"
   xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -10,12 +9,12 @@
   <channel>
     <title>VBM Interior Blog — Interior Design Tips &amp; Trends</title>
     <link>https://vbminterior.com/blog/</link>
-    <description>Interior design tips, trends, and inspiration from VBM Interior, Chennai's trusted interior design company with 500+ completed projects.</description>
+    <description>Interior design tips, trends, and inspiration from VBM Interior — Chennai's trusted interior design company founded in 2017 with 200+ completed projects.</description>
     <language>en-in</language>
-    <lastBuildDate>Thu, 27 Feb 2026 00:00:00 +0530</lastBuildDate>
-    <managingEditor>Vbminterior@gmail.com (VBM Interior)</managingEditor>
-    <webMaster>Vbminterior@gmail.com (VBM Interior)</webMaster>
-    <copyright>Copyright 2008-2026 VBM Interior. All rights reserved.</copyright>
+    <lastBuildDate>Tue, 10 Mar 2026 00:00:00 +0530</lastBuildDate>
+    <managingEditor>vbminterior@gmail.com (VBM Interior)</managingEditor>
+    <webMaster>vbminterior@gmail.com (VBM Interior)</webMaster>
+    <copyright>Copyright 2017-2026 VBM Interior. All rights reserved.</copyright>
     <category>Interior Design</category>
     <category>Home Decor</category>
     <category>Architecture</category>
@@ -29,52 +28,134 @@
     </image>
     <atom:link href="https://vbminterior.com/feed.xml" rel="self" type="application/rss+xml" />
 
-    <!-- Blog Post 1 -->
     <item>
-      <title>Interior Design Trends 2024: What's Shaping Modern Homes</title>
-      <link>https://vbminterior.com/blog/interior-design-trends-2024/</link>
-      <description>Explore the latest interior design trends for 2024 — from sustainable materials and biophilic design to bold colors and smart home integration. Learn how to incorporate these trends into your Chennai home.</description>
+      <title>Interior Design Trends 2026: What's Shaping Homes in Chennai</title>
+      <link>https://vbminterior.com/blog/interior-design-trends-2026/</link>
+      <description>From warm minimalism and fluted textures to AI-driven design and earthy luxury — here are the top interior trends defining 2026 homes in Chennai and beyond.</description>
       <dc:creator>VBM Interior</dc:creator>
-      <pubDate>Mon, 15 Jan 2024 09:00:00 +0530</pubDate>
-      <guid isPermaLink="true">https://vbminterior.com/blog/interior-design-trends-2024/</guid>
-      <category>Design Trends</category>
-      <category>Home Interiors</category>
+      <pubDate>Thu, 05 Mar 2026 09:00:00 +0530</pubDate>
+      <guid isPermaLink="true">https://vbminterior.com/blog/interior-design-trends-2026/</guid>
+      <category>Trends</category>
     </item>
 
-    <!-- Blog Post 2 -->
     <item>
-      <title>Multiple Wallpaper Design Ideas to Transform Your Space</title>
-      <link>https://vbminterior.com/blog/wallpaper-design-ideas/</link>
-      <description>Discover creative wallpaper design ideas for every room. From textured wallpapers for living rooms to subtle patterns for bedrooms — find the perfect wallpaper to elevate your interior.</description>
+      <title>Vastu-Compliant Interior Design: A Complete Guide for Chennai Homes</title>
+      <link>https://vbminterior.com/blog/vastu-compliant-interior-design-chennai/</link>
+      <description>Learn how to design vastu-compliant interiors for your Chennai home — room placement, color choices, material selection, and practical tips that blend tradition with modern aesthetics.</description>
       <dc:creator>VBM Interior</dc:creator>
-      <pubDate>Sat, 10 Feb 2024 09:00:00 +0530</pubDate>
-      <guid isPermaLink="true">https://vbminterior.com/blog/wallpaper-design-ideas/</guid>
-      <category>Wallpaper</category>
-      <category>Home Decor</category>
+      <pubDate>Sun, 01 Mar 2026 09:00:00 +0530</pubDate>
+      <guid isPermaLink="true">https://vbminterior.com/blog/vastu-compliant-interior-design-chennai/</guid>
+      <category>Vastu</category>
     </item>
 
-    <!-- Blog Post 3 -->
     <item>
-      <title>Small Spaces, Unique Style: Design Tips for Compact Homes</title>
-      <link>https://vbminterior.com/blog/small-spaces-unique-style/</link>
-      <description>Smart interior design tips for small spaces. Learn how to maximize every square foot with clever storage, multi-functional furniture, and visual tricks that make compact homes feel spacious.</description>
+      <title>False Ceiling Designs: Types, Costs &amp; 2026 Ideas for Every Room</title>
+      <link>https://vbminterior.com/blog/false-ceiling-designs-types-costs-ideas/</link>
+      <description>Explore false ceiling design options — POP, gypsum, wooden, metal, and more. Compare costs, learn what works for each room, and get 2026 design inspiration.</description>
       <dc:creator>VBM Interior</dc:creator>
-      <pubDate>Tue, 05 Mar 2024 09:00:00 +0530</pubDate>
-      <guid isPermaLink="true">https://vbminterior.com/blog/small-spaces-unique-style/</guid>
-      <category>Small Spaces</category>
+      <pubDate>Sun, 01 Mar 2026 09:00:00 +0530</pubDate>
+      <guid isPermaLink="true">https://vbminterior.com/blog/false-ceiling-designs-types-costs-ideas/</guid>
       <category>Design Tips</category>
     </item>
 
-    <!-- Blog Post 4 -->
     <item>
-      <title>Kitchen Design Guide: Plan Your Dream Kitchen</title>
-      <link>https://vbminterior.com/blog/kitchen-design-guide/</link>
-      <description>A comprehensive guide to designing your dream kitchen. Covers modular kitchen layouts, storage solutions, countertop materials, appliance placement, and ventilation planning for Indian kitchens.</description>
+      <title>Wardrobe Design Ideas: Smart Storage Solutions for Every Bedroom</title>
+      <link>https://vbminterior.com/blog/wardrobe-design-ideas-storage-solutions/</link>
+      <description>Discover wardrobe design ideas that maximize storage — sliding wardrobes, walk-in closets, loft storage, and smart organization solutions for Indian bedrooms.</description>
       <dc:creator>VBM Interior</dc:creator>
-      <pubDate>Mon, 01 Apr 2024 09:00:00 +0530</pubDate>
-      <guid isPermaLink="true">https://vbminterior.com/blog/kitchen-design-guide/</guid>
-      <category>Kitchen Design</category>
-      <category>Modular Kitchen</category>
+      <pubDate>Sun, 01 Mar 2026 09:00:00 +0530</pubDate>
+      <guid isPermaLink="true">https://vbminterior.com/blog/wardrobe-design-ideas-storage-solutions/</guid>
+      <category>Bedroom</category>
+    </item>
+
+    <item>
+      <title>10 Interior Design Mistakes That Waste Your Money (And How to Avoid Them)</title>
+      <link>https://vbminterior.com/blog/interior-design-mistakes-waste-money/</link>
+      <description>Avoid these 10 costly interior design mistakes — from poor space planning and wrong material choices to ignoring lighting and ventilation. Save money on your Chennai home project.</description>
+      <dc:creator>VBM Interior</dc:creator>
+      <pubDate>Sun, 01 Mar 2026 09:00:00 +0530</pubDate>
+      <guid isPermaLink="true">https://vbminterior.com/blog/interior-design-mistakes-waste-money/</guid>
+      <category>Guide</category>
+    </item>
+
+    <item>
+      <title>How Long Does Interior Design Take? A Realistic Timeline for Chennai Homes</title>
+      <link>https://vbminterior.com/blog/interior-design-timeline-how-long/</link>
+      <description>Get a realistic timeline for your interior design project — from consultation to handover. Learn what affects timelines and how VBM Interior delivers on schedule.</description>
+      <dc:creator>VBM Interior</dc:creator>
+      <pubDate>Sun, 01 Mar 2026 09:00:00 +0530</pubDate>
+      <guid isPermaLink="true">https://vbminterior.com/blog/interior-design-timeline-how-long/</guid>
+      <category>Guide</category>
+    </item>
+
+    <item>
+      <title>Living Room Interior Design Ideas for Indian Homes: 2026 Inspiration Guide</title>
+      <link>https://vbminterior.com/blog/living-room-interior-design-ideas-indian-homes/</link>
+      <description>Get inspired with living room design ideas perfect for Indian homes — color palettes, furniture layouts, lighting, TV unit designs, and decor tips for 2026.</description>
+      <dc:creator>VBM Interior</dc:creator>
+      <pubDate>Sun, 01 Mar 2026 09:00:00 +0530</pubDate>
+      <guid isPermaLink="true">https://vbminterior.com/blog/living-room-interior-design-ideas-indian-homes/</guid>
+      <category>Design Tips</category>
+    </item>
+
+    <item>
+      <title>How to Choose the Best Interior Designers in Chennai</title>
+      <link>https://vbminterior.com/blog/best-interior-designers-chennai-2026/</link>
+      <description>A comprehensive guide to choosing the best interior designers in Chennai — what to look for, questions to ask, red flags to avoid, and why VBM Interior stands out.</description>
+      <dc:creator>VBM Interior</dc:creator>
+      <pubDate>Wed, 25 Feb 2026 09:00:00 +0530</pubDate>
+      <guid isPermaLink="true">https://vbminterior.com/blog/best-interior-designers-chennai-2026/</guid>
+      <category>Guide</category>
+    </item>
+
+    <item>
+      <title>Complete Guide to Modular Kitchen Design in Chennai</title>
+      <link>https://vbminterior.com/blog/modular-kitchen-design-chennai-guide/</link>
+      <description>Everything you need to know about modular kitchen design in Chennai — layouts, materials, costs, appliance integration, and tips from VBM Interior's kitchen experts.</description>
+      <dc:creator>VBM Interior</dc:creator>
+      <pubDate>Fri, 20 Feb 2026 09:00:00 +0530</pubDate>
+      <guid isPermaLink="true">https://vbminterior.com/blog/modular-kitchen-design-chennai-guide/</guid>
+      <category>Kitchen</category>
+    </item>
+
+    <item>
+      <title>Interior Design Cost in Chennai 2026: Complete Price Guide</title>
+      <link>https://vbminterior.com/blog/interior-design-cost-chennai-2026/</link>
+      <description>Complete price guide for interior design in Chennai — 2BHK, 3BHK, kitchen, bedroom costs, what affects pricing, and how to get the best value for your budget.</description>
+      <dc:creator>VBM Interior</dc:creator>
+      <pubDate>Tue, 10 Feb 2026 09:00:00 +0530</pubDate>
+      <guid isPermaLink="true">https://vbminterior.com/blog/interior-design-cost-chennai-2026/</guid>
+      <category>Budget Tips</category>
+    </item>
+
+    <item>
+      <title>Multiple Wallpaper Design Ideas for Every Room</title>
+      <link>https://vbminterior.com/blog/multiple-wallpaper-design-ideas/</link>
+      <description>Discover creative wallpaper design ideas for every room — from textured wallpapers for living rooms to subtle patterns for bedrooms. Find the perfect wallpaper to elevate your interior.</description>
+      <dc:creator>VBM Interior</dc:creator>
+      <pubDate>Wed, 28 Jan 2026 09:00:00 +0530</pubDate>
+      <guid isPermaLink="true">https://vbminterior.com/blog/multiple-wallpaper-design-ideas/</guid>
+      <category>Design Tips</category>
+    </item>
+
+    <item>
+      <title>Small Spaces, Big Style: Design Tips for a Small Space Makeover</title>
+      <link>https://vbminterior.com/blog/small-spaces-big-style/</link>
+      <description>Smart interior design tips for small spaces — maximize every square foot with clever storage, multi-functional furniture, and visual tricks that make compact homes feel spacious.</description>
+      <dc:creator>VBM Interior</dc:creator>
+      <pubDate>Thu, 15 Jan 2026 09:00:00 +0530</pubDate>
+      <guid isPermaLink="true">https://vbminterior.com/blog/small-spaces-big-style/</guid>
+      <category>Space Planning</category>
+    </item>
+
+    <item>
+      <title>Creating Affordable Luxury in Interior Design</title>
+      <link>https://vbminterior.com/blog/creating-affordable-luxury/</link>
+      <description>Learn how to achieve luxury interiors on a budget — smart material choices, design hacks, and VBM Interior's affordable luxury packages starting from ₹3 Lakh for 2BHK.</description>
+      <dc:creator>VBM Interior</dc:creator>
+      <pubDate>Mon, 05 Jan 2026 09:00:00 +0530</pubDate>
+      <guid isPermaLink="true">https://vbminterior.com/blog/creating-affordable-luxury/</guid>
+      <category>Budget Tips</category>
     </item>
 
   </channel>

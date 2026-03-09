@@ -1,7 +1,7 @@
 <!--
   ============================================================
   VBM Interior — Structured Data (JSON-LD) — REFERENCE FILE
-  Updated: 2026-02-27
+  Updated: 2026-03-10
 
   NOTE: The LIVE structured data is in index.html <head>.
   This file is a reference/backup. Always update index.html first.
@@ -45,9 +45,9 @@
     "https://vbminterior.com/assets/images/hero-bg.jpg",
     "https://vbminterior.com/assets/images/portfolio-showcase.jpg"
   ],
-  "description": "VBM Interior is Chennai's trusted interior design company with 500+ completed projects since 2008. We offer end-to-end residential and commercial interior design services with a comprehensive 10-year warranty.",
-  "telephone": "+917397373587",
-  "email": "Vbminterior@gmail.com",
+  "description": "VBM Interior is Chennai's trusted interior design company with 200+ completed projects since 2017, founded by Mohan Kumar S. End-to-end residential and commercial interior design with up to 10-year warranty and 1-year free maintenance.",
+  "telephone": ["+917397373587", "+919940509095"],
+  "email": "vbminterior@gmail.com",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "112 NSK Nagar Main Rd",
@@ -89,15 +89,15 @@
       "closes": "19:00"
     }
   ],
-  "foundingDate": "2008",
+  "foundingDate": "2017",
   "founder": {
     "@type": "Person",
-    "name": "Vijay Kumar",
-    "jobTitle": "Founder & Lead Designer"
+    "name": "Mohan Kumar S",
+    "jobTitle": "Founder & Managing Director"
   },
   "numberOfEmployees": {
     "@type": "QuantitativeValue",
-    "minValue": 10,
+    "minValue": 30,
     "maxValue": 50
   },
   "aggregateRating": {
@@ -116,7 +116,7 @@
     "https://www.linkedin.com/company/vbminterior/"
   ],
   "knowsLanguage": ["en", "ta"],
-  "slogan": "Transforming Spaces, Creating Experiences"
+  "slogan": "PRECISION. PERFECTION.. PROMISE..."
 }
 </script>
 
@@ -141,7 +141,14 @@
     {
       "@type": "ContactPoint",
       "telephone": "+917397373587",
-      "email": "Vbminterior@gmail.com",
+      "email": "vbminterior@gmail.com",
+      "contactType": "customer service",
+      "areaServed": "IN",
+      "availableLanguage": ["English", "Tamil"]
+    },
+    {
+      "@type": "ContactPoint",
+      "telephone": "+919940509095",
       "contactType": "customer service",
       "areaServed": "IN",
       "availableLanguage": ["English", "Tamil"]
@@ -168,7 +175,7 @@
   "@id": "https://vbminterior.com/#website",
   "name": "VBM Interior",
   "url": "https://vbminterior.com",
-  "description": "Best interior designers in Chennai — 500+ projects, 10-year warranty, end-to-end interior design services.",
+  "description": "Best interior designers in Chennai — 200+ projects, up to 10-year warranty, end-to-end interior design services since 2017.",
   "publisher": {
     "@id": "https://vbminterior.com/#organization"
   },
@@ -286,7 +293,7 @@
         "itemOffered": {
           "@type": "Service",
           "name": "Complete Interior Design",
-          "description": "End-to-end interior design services including space planning, material selection, project management, and quality assurance with 10-year warranty.",
+          "description": "End-to-end interior design services including space planning, material selection, project management, and quality assurance with up to 10-year warranty and 1-year free maintenance.",
           "url": "https://vbminterior.com/services/"
         }
       },
@@ -351,7 +358,7 @@
       "name": "What is the warranty on your work?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We provide a comprehensive 10-year warranty on all our interior work. This covers manufacturing defects, material quality, and workmanship issues."
+        "text": "We provide up to 10-year warranty depending on package: Standard (5 years), Premium (7 years), Luxury (10 years). All packages include 1-year free maintenance."
       }
     },
     {
@@ -399,7 +406,7 @@
       "name": "What makes VBM Interior different from others?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our combination of creative design expertise, quality materials, 10-year warranty, on-time delivery, and affordable pricing sets us apart. We treat every project as our own home."
+        "text": "Founded in 2017 by Mohan Kumar S, our 8+ years of expertise, 30+ technical professionals, 1-year free maintenance, floor protection during work, daily site cleaning, and up to 10-year warranty set us apart. We treat every project as our own home."
       }
     }
   ]
