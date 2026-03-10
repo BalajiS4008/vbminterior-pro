@@ -21,92 +21,92 @@ const Portfolio = ({ onOpenModal }) => {
 
     const categories = [
         { id: 'all', label: 'All Projects', icon: <FaTh /> },
-        { id: 'living', label: 'Living Room', icon: <FaCouch /> },
+        { id: 'apartment', label: 'Apartment Interior', icon: <FaCouch /> },
         { id: 'bedroom', label: 'Bedroom', icon: <FaBed /> },
         { id: 'kitchen', label: 'Kitchen', icon: <FaUtensils /> },
-        { id: 'office', label: 'Office', icon: <FaBuilding /> },
+        { id: 'wardrobe', label: 'Wardrobes', icon: <FaBuilding /> },
     ];
 
     const projects = [
         {
-            title: 'Modern Living Room',
-            category: 'living',
-            description: 'Contemporary living space with minimalist design and warm tones',
+            title: 'Minimalist Apartment Interior',
+            category: 'apartment',
+            description: 'Modern minimalist apartment with elegant finishes and smart storage solutions',
             image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80',
-            location: 'Bangalore',
-            area: '450 sq.ft',
+            location: 'Arumbakkam, Chennai',
+            area: '2 BHK',
+            featured: true,
+        },
+        {
+            title: 'Premium 3BHK Interior',
+            category: 'apartment',
+            description: 'Complete home interior with premium laminate finishes and soft-close hardware',
+            image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80',
+            location: 'Arumbakkam, Chennai',
+            area: '3 BHK',
             featured: true,
         },
         {
             title: 'Luxury Bedroom Suite',
             category: 'bedroom',
-            description: 'Elegant bedroom with custom wardrobe and ambient lighting',
+            description: 'Elegant bedroom with custom wardrobe, ambient lighting and acrylic finish',
             image: 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&q=80',
-            location: 'Mumbai',
+            location: 'Anna Nagar, Chennai',
             area: '380 sq.ft',
             featured: false,
         },
         {
-            title: 'Modular Kitchen',
+            title: 'Modular Kitchen — BWP Ply',
             category: 'kitchen',
-            description: 'Functional kitchen with modern appliances and smart storage',
+            description: 'Century BWP Ply modular kitchen with soft-close fittings and tandem drawers',
             image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
-            location: 'Hyderabad',
-            area: '200 sq.ft',
+            location: 'Velachery, Chennai',
+            area: '120 sq.ft',
             featured: true,
         },
         {
-            title: 'Corporate Office',
-            category: 'office',
-            description: 'Professional workspace with ergonomic design',
-            image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80',
-            location: 'Chennai',
-            area: '1200 sq.ft',
-            featured: false,
-        },
-        {
-            title: 'Cozy Living Space',
-            category: 'living',
-            description: 'Warm and inviting family room with custom furniture',
-            image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80',
-            location: 'Delhi',
-            area: '520 sq.ft',
-            featured: false,
-        },
-        {
-            title: 'Master Bedroom',
-            category: 'bedroom',
-            description: 'Luxurious master suite with walk-in closet and en-suite bathroom',
+            title: 'Designer Wardrobe — Acrylic Finish',
+            category: 'wardrobe',
+            description: 'Custom acrylic and glass finish wardrobe with Hettich soft-close premium hardware',
             image: 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=800&q=80',
-            location: 'Pune',
-            area: '400 sq.ft',
-            featured: true,
-        },
-        {
-            title: 'Contemporary Kitchen',
-            category: 'kitchen',
-            description: 'Sleek kitchen with island counter and premium finishes',
-            image: 'https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&q=80',
-            location: 'Bangalore',
-            area: '250 sq.ft',
+            location: 'T. Nagar, Chennai',
+            area: '2 Units',
             featured: false,
         },
         {
-            title: 'Executive Office',
-            category: 'office',
-            description: 'Premium office interior with collaborative zones',
-            image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&q=80',
-            location: 'Mumbai',
-            area: '2000 sq.ft',
-            featured: false,
-        },
-        {
-            title: 'Minimalist Living',
-            category: 'living',
-            description: 'Clean lines and modern aesthetics for urban living',
+            title: 'Contemporary Apartment Living',
+            category: 'apartment',
+            description: 'Functional apartment interior with TV unit, back panel, glass profile shutters',
             image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80',
-            location: 'Bangalore',
-            area: '600 sq.ft',
+            location: 'OMR, Chennai',
+            area: '2 BHK',
+            featured: false,
+        },
+        {
+            title: 'Master Bedroom with Storage',
+            category: 'bedroom',
+            description: 'Spacious master bedroom with matte/gloss wardrobe and premium laminate loft',
+            image: 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=800&q=80',
+            location: 'Porur, Chennai',
+            area: '400 sq.ft',
+            featured: false,
+        },
+        {
+            title: 'Luxury Modular Kitchen',
+            category: 'kitchen',
+            description: 'Greenply BWP Ply kitchen with luxury finish, tandem drawers and premium hardware',
+            image: 'https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&q=80',
+            location: 'Adyar, Chennai',
+            area: '150 sq.ft',
+            featured: false,
+        },
+        {
+            title: 'Premium Laminate Wardrobe',
+            category: 'wardrobe',
+            description: 'Matte and gloss finish wardrobes with Ebco soft-close equivalent hardware',
+            image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&q=80',
+            location: 'Arumbakkam, Chennai',
+            area: '2 Units',
             featured: false,
         },
     ];
@@ -156,17 +156,17 @@ const Portfolio = ({ onOpenModal }) => {
                         </p>
                         <div className="portfolio-hero-stats">
                             <div className="hero-stat">
-                                <strong>500+</strong>
+                                <strong>200+</strong>
                                 <span>Projects</span>
                             </div>
                             <div className="hero-stat-divider"></div>
                             <div className="hero-stat">
-                                <strong>450+</strong>
-                                <span>Happy Clients</span>
+                                <strong>30+</strong>
+                                <span>Team Members</span>
                             </div>
                             <div className="hero-stat-divider"></div>
                             <div className="hero-stat">
-                                <strong>15+</strong>
+                                <strong>8+</strong>
                                 <span>Years</span>
                             </div>
                         </div>

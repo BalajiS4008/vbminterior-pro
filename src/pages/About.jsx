@@ -31,28 +31,28 @@ const About = () => {
 
     const team = [
         {
-            name: 'Vijay Kumar',
-            role: 'Founder & Lead Designer',
-            description: 'With over 15 years of experience in interior design',
-            image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80',
-        },
-        {
-            name: 'Priya Menon',
-            role: 'Senior Designer',
-            description: 'Specializes in residential and commercial spaces',
+            name: 'Thamizh Priya N',
+            role: 'Lead Interior Designer',
+            description: 'Leads design vision with creative excellence and client-centric approach',
             image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80',
         },
         {
-            name: 'Arun Sharma',
+            name: 'Selva Kumar B',
             role: 'Project Manager',
-            description: 'Ensures timely delivery and quality execution',
+            description: 'Ensures timely delivery, quality execution, and seamless coordination',
+            image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80',
+        },
+        {
+            name: 'Gandhi M',
+            role: '3D Visual Artist',
+            description: 'Brings designs to life with detailed 2D drawings and realistic 3D visuals',
             image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80',
         },
         {
-            name: 'Divya Reddy',
-            role: 'Design Consultant',
-            description: 'Expert in modern and contemporary designs',
-            image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80',
+            name: 'Balaji S',
+            role: 'Client Consultant',
+            description: 'Expert guidance on design ideas, materials, and bringing your vision to life',
+            image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80',
         },
     ];
 
@@ -70,13 +70,13 @@ const About = () => {
                 </div>
                 <div className="container">
                     <div className="about-hero-content animate-fade-in">
-                        <span className="about-hero-badge">Since 2008</span>
+                        <span className="about-hero-badge">Since 2017</span>
                         <h1>
                             About <span className="hero-highlight">VBM Interior</span>
                         </h1>
                         <p>
-                            Transforming spaces into stunning masterpieces since 2008. We are passionate
-                            about creating interiors that inspire and delight.
+                            Precision. Perfection. Promise — Transforming spaces with strong execution,
+                            clean process, and long-term trust since 2017.
                         </p>
                     </div>
                 </div>
@@ -90,20 +90,20 @@ const About = () => {
                             <span className="section-label">Our Journey</span>
                             <h2>Our <span className="gradient-text"><em>Story</em></span></h2>
                             <p>
-                                Founded in 2008, VBM Interior began with a simple vision: to make beautiful,
-                                functional interior design accessible to everyone. What started as a small
-                                studio in Chennai has grown into one of the city's most trusted interior
-                                design firms.
+                                Founded in 2017 by Mohan Kumar S, VBM Interior has grown into a trusted
+                                and leading name in interior services and turnkey contracting. Based in
+                                Tamil Nadu with office in Arumbakkam, we bring 8+ years of
+                                experience to every project.
                             </p>
                             <p>
-                                Over the years, we've completed more than 500 projects, ranging from cozy
-                                apartments to sprawling commercial spaces. Each project is a testament to
-                                our commitment to quality, creativity, and client satisfaction.
+                                With 200+ successfully completed projects and a strong team of 30+
+                                technical professionals, we continue to set benchmarks in delivering
+                                world-class interiors.
                             </p>
                             <p>
-                                Our team of experienced designers and craftsmen work tirelessly to bring
-                                your vision to life, combining innovative design solutions with practical
-                                functionality.
+                                From residential homes to corporate offices, commercial buildings and
+                                industrial spaces, we deliver interiors that blend aesthetic appeal with
+                                practical solutions — bringing exact design visions into reality.
                             </p>
                         </div>
                         <div className="story-image animate-slide-in-right">
@@ -120,17 +120,19 @@ const About = () => {
                         <div className="mission-card animate-scale-in">
                             <div className="mission-icon"><FaLightbulb /></div>
                             <h3>Our Mission</h3>
-                            <p>
-                                To transform ordinary spaces into extraordinary experiences through
-                                innovative design, exceptional craftsmanship, and personalized service.
-                            </p>
+                            <ul style={{ textAlign: 'left', listStyle: 'none', padding: 0, margin: 0 }}>
+                                <li>Deliver quality interiors with honest pricing</li>
+                                <li>Maintain precise measurement & planning</li>
+                                <li>Ensure hassle-free execution for clients</li>
+                                <li>Build long-term trust through reliable work</li>
+                            </ul>
                         </div>
                         <div className="mission-card animate-scale-in" style={{ animationDelay: '0.2s' }}>
                             <div className="mission-icon"><FaStar /></div>
                             <h3>Our Vision</h3>
                             <p>
-                                To be the most trusted interior design firm, known for our creativity,
-                                quality, and commitment to making luxury accessible to all.
+                                To create beautiful and practical living spaces that bring comfort,
+                                happiness and long-term value to every home.
                             </p>
                         </div>
                     </div>
@@ -187,12 +189,12 @@ const About = () => {
                         <h2 className="text-center">Why Choose <span className="gradient-text"><em>VBM Interior</em></span></h2>
                         <div className="why-choose-grid">
                             {[
-                                { title: 'Personalized Approach', desc: 'Every project is unique, and we tailor our designs to your specific needs and preferences' },
-                                { title: 'Transparent Pricing', desc: 'No hidden costs or surprises. We provide clear, upfront pricing for all our services' },
-                                { title: 'Quality Materials', desc: 'We use only the finest materials and work with trusted suppliers to ensure durability' },
+                                { title: '1 Year Free Maintenance', desc: 'We offer 1-year free service support after project completion for complete peace of mind' },
+                                { title: 'Long-Term Trust Builders', desc: 'We are not just service providers — we are committed to customer satisfaction and lasting relationships' },
+                                { title: 'Floor Protection Commitment', desc: 'We provide protective sheet covering for tiles during work to prevent scratches and damage' },
+                                { title: 'Daily Site Cleaning', desc: 'After every workday, the site is cleaned and maintained neatly for a hassle-free experience' },
+                                { title: 'Transparent Pricing', desc: 'No hidden costs or surprises. Honest pricing with clear, upfront quotes for all our services' },
                                 { title: 'Timely Completion', desc: 'We respect your time and ensure projects are completed within the agreed timeline' },
-                                { title: 'After-Sales Support', desc: 'Our relationship doesn\'t end at project completion. We provide ongoing support and warranty' },
-                                { title: 'Sustainable Design', desc: 'We incorporate eco-friendly materials and practices wherever possible' },
                             ].map((item, index) => (
                                 <div key={index} className="why-choose-item">
                                     <FaCheckCircle />

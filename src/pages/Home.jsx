@@ -83,6 +83,7 @@ const Home = ({ onOpenModal }) => {
     const chooseCycle = useCharCycle(['Choose', 'Trust'], 3000);
     const dreamCycle = useCharCycle(['Dream', 'Perfect'], 3000);
     const luxuryCycle = useCharCycle(['Luxury', 'Premium'], 3000);
+    const showcaseCycle = useCharCycle(['Showcase', 'Gallery', 'Portfolio'], 3000);
 
     const whyChooseItems = [
         { image: customDesignImg, title: 'Custom Interior Designs', description: 'Tailored designs that reflect your unique style' },
@@ -121,7 +122,7 @@ const Home = ({ onOpenModal }) => {
             alts: [
                 'Modular kitchen design in Porur, Chennai',
                 'Modern kitchen interior in OMR, Chennai',
-                'Kitchen renovation in Tambaram, Chennai',
+                'Kitchen renovation in Arumbakkam, Chennai',
                 'Premium kitchen design in Besant Nagar, Chennai',
             ],
         },
@@ -181,34 +182,44 @@ const Home = ({ onOpenModal }) => {
     ];
 
     const faqItems = [
-        { question: 'How much does interior design cost in Chennai?', answer: 'Complete 2BHK interiors start from ₹3.5 lakhs, 3BHK from ₹5.5 lakhs, and 4BHK from ₹8 lakhs. Modular kitchens start from ₹1.5 lakhs, and single room interiors from ₹75,000. We offer transparent pricing with no hidden costs — the quote you receive is the price you pay.' },
+        { question: 'How much does interior design cost in Chennai?', answer: 'We offer Standard, Premium, and Luxury packages. 2BHK interiors range from ₹3–4 lakhs (Standard) to ₹7–10 lakhs (Luxury). 3BHK interiors range from ₹5–6 lakhs (Standard) to ₹10–13 lakhs (Luxury). Modular kitchens start from ₹1.5 lakhs. We offer transparent pricing with no hidden costs — the quote you receive is the price you pay.' },
         { question: 'How long does an interior design project take to complete?', answer: 'A single room redesign typically takes 2-4 weeks, while a complete home interior takes 6-12 weeks depending on size and complexity. We commit to a fixed timeline at the start and guarantee on-time delivery with milestone updates throughout the project.' },
         { question: 'Do you offer free consultations?', answer: 'Yes! We offer a completely free initial design consultation. Our designer visits your site, understands your requirements, takes measurements, discusses your vision and budget, and provides a detailed estimate — all at no cost and no obligation.' },
-        { question: 'What is the warranty on your interior work?', answer: 'We provide a comprehensive 10-year warranty covering manufacturing defects, material quality, and workmanship issues. This includes modular furniture, cabinetry, hardware, and finishes. Our after-sales service team handles any warranty claims promptly.' },
+        { question: 'What is the warranty on your interior work?', answer: 'We provide 5-year warranty (Standard), 7-year warranty (Premium), or 10-year warranty (Luxury) covering manufacturing defects, material quality, and workmanship. Plus, we offer 1-year free maintenance support after project completion. Our after-sales service team handles any warranty claims promptly.' },
         { question: 'What materials and brands do you use?', answer: 'We use only premium, ISI-certified materials from trusted brands like Hettich and Hafele (hardware), Century and Green Ply (plywood), Asian Paints and Berger (finishes), and Saint-Gobain (glass). All materials are termite-treated and moisture-resistant for Chennai\'s climate.' },
         { question: 'Do you provide 3D designs before starting work?', answer: 'Yes, we create detailed 3D visualizations and photo-realistic renderings for every project before execution begins. You can see exactly how your space will look, request changes, and approve the design before any work starts on-site.' },
         { question: 'Can you work within my budget without compromising quality?', answer: 'Absolutely. We offer flexible packages across different price points — from essential to premium. Our designers optimize material choices and layouts to maximize value within your budget. Luxury design doesn\'t have to mean expensive — it means smart planning.' },
         { question: 'Do you handle only design or the full project execution?', answer: 'We provide complete end-to-end service — from initial concept and 3D design to material procurement, factory production, site execution, installation, and final handover. One team manages everything, so you have a single point of contact throughout.' },
         { question: 'Is your interior design Vastu-compliant?', answer: 'Yes, we incorporate Vastu Shastra principles into our designs when requested. Our team is experienced in aligning room layouts, color schemes, furniture placement, and kitchen direction according to Vastu guidelines without compromising on modern aesthetics.' },
         { question: 'Do you offer EMI or financing options?', answer: 'Yes, we offer easy EMI options and flexible payment plans through our banking partners. You can start your dream interior project with a minimal upfront payment and pay the rest in comfortable monthly installments at attractive interest rates.' },
-        { question: 'What areas in Chennai do you serve?', answer: 'We serve across Chennai including Adyar, Anna Nagar, T. Nagar, Velachery, OMR, ECR, Besant Nagar, Porur, Mylapore, Nungambakkam, Tambaram, Sholinganallur, and 30+ more areas. We also cover Kancheepuram, Chengalpattu, and parts of Tiruvallur district.' },
+        { question: 'What areas in Chennai do you serve?', answer: 'We serve across Chennai including Adyar, Anna Nagar, T. Nagar, Velachery, OMR, ECR, Besant Nagar, Porur, Mylapore, Nungambakkam, Sholinganallur, and 30+ more areas. We also cover Kancheepuram, Chengalpattu, and parts of Tiruvallur district.' },
         { question: 'How do I get started with VBM Interior?', answer: 'Getting started is simple! Call us at +91 7397373587, click "Get Instant Quote", or WhatsApp us. We\'ll schedule a free home visit consultation within 24-48 hours. After understanding your needs, we provide a detailed proposal with 3D designs and transparent pricing.' },
     ];
 
     const welcomeRef = useScrollReveal();
     const galleryRef = useScrollReveal();
+    const masterpieceRef = useScrollReveal();
     const tabsRef = useScrollReveal();
     const affordableRef = useScrollReveal();
     const blogRef = useScrollReveal();
     const areasRef = useScrollReveal();
     const faqRef = useScrollReveal();
 
+    const masterpieceProjects = [
+        { title: 'Minimalist Apartment', location: 'Arumbakkam, Chennai', category: 'Apartment Interior', image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80', size: 'large' },
+        { title: 'Modular Kitchen', location: 'Velachery, Chennai', category: 'Kitchen', image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80', size: 'small' },
+        { title: 'Designer Wardrobe', location: 'T. Nagar, Chennai', category: 'Wardrobes', image: 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=800&q=80', size: 'small' },
+        { title: 'Premium 3BHK Interior', location: 'Arumbakkam, Chennai', category: 'Apartment Interior', image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80', size: 'small' },
+        { title: 'Luxury Bedroom Suite', location: 'Anna Nagar, Chennai', category: 'Bedroom', image: 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&q=80', size: 'large' },
+        { title: 'Luxury Modular Kitchen', location: 'Adyar, Chennai', category: 'Kitchen', image: 'https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&q=80', size: 'small' },
+    ];
+
     const areasWeServe = {
         'South Chennai': ['Adyar', 'Besant Nagar', 'Thiruvanmiyur', 'Velachery', 'Mylapore', 'R.A. Puram', 'Alwarpet', 'Guindy'],
         'West Chennai': ['Anna Nagar', 'Mogappair', 'Ambattur', 'Porur', 'Valasaravakkam', 'Virugambakkam', 'Koyambedu', 'Vadapalani'],
         'Central Chennai': ['T. Nagar', 'Nungambakkam', 'Kilpauk', 'Egmore', 'Chetpet', 'Teynampet', 'Kodambakkam'],
         'IT Corridor': ['OMR', 'ECR', 'Sholinganallur', 'Perungudi', 'Siruseri', 'Navalur', 'Kelambakkam', 'Medavakkam'],
-        'Nearby Districts': ['Tambaram', 'Chromepet', 'Pallavaram', 'Kancheepuram', 'Chengalpattu', 'Mahabalipuram', 'Tiruvallur'],
+        'Nearby Districts': ['Chromepet', 'Pallavaram', 'Kancheepuram', 'Chengalpattu', 'Mahabalipuram', 'Tiruvallur'],
     };
 
     return (
@@ -382,6 +393,40 @@ const Home = ({ onOpenModal }) => {
 
             {/* Google Reviews */}
             <GoogleReviews />
+
+            {/* Recently Completed Project Masterpiece */}
+            <section className="section masterpiece-section">
+                <div className="container">
+                    <div className="section-header text-center">
+                        <h2>Recently Completed Interior Design <span className="dream-word">
+                            {showcaseCycle.currentWord.split('').map((char, i) => (
+                                <span key={`${showcaseCycle.currentWord}-${i}`} className={`char-letter ${showcaseCycle.phase}`} style={{ animationDelay: `${i * 60}ms` }}>{char}</span>
+                            ))}
+                        </span></h2>
+                        <p>Explore our latest finished projects — 200+ homes transformed across Chennai</p>
+                    </div>
+                    <div className="masterpiece-grid scroll-reveal" ref={masterpieceRef}>
+                        {masterpieceProjects.map((project, index) => (
+                            <div
+                                key={index}
+                                className={`masterpiece-card ${project.size === 'large' ? 'masterpiece-large' : ''}`}
+                            >
+                                <img src={project.image} alt={`${project.title} by VBM Interior in ${project.location}`} loading="lazy" />
+                                <div className="masterpiece-overlay">
+                                    <span className="masterpiece-category">{project.category}</span>
+                                    <h3 className="masterpiece-title">{project.title}</h3>
+                                    <p className="masterpiece-location">{project.location}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                    <div className="text-center" style={{ marginTop: '2.5rem' }}>
+                        <Link to="/portfolio" className="btn btn-outline-gold">
+                            View All Projects <FaArrowRight />
+                        </Link>
+                    </div>
+                </div>
+            </section>
 
             {/* 7. Design Categories Tabs */}
             <section className="section design-tabs-section scroll-reveal" ref={tabsRef}>

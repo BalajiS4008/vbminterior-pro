@@ -12,7 +12,7 @@ You are an expert SEO consultant and AI discoverability specialist. I need you t
 - **Website URL**: https://vbminterior.com
 - **Business Name**: VBM Interior
 - **Business Type**: Interior Design Company
-- **Location**: Arumbakkam & Tambaram, Chennai, Tamil Nadu, India
+- **Location**: Arumbakkam, Chennai, Tamil Nadu, India
 - **Founded**: 2017 by Mohan Kumar S
 - **Experience**: 8+ years
 - **Projects Completed**: 200+
@@ -33,7 +33,7 @@ You are an expert SEO consultant and AI discoverability specialist. I need you t
 - **Phone Number 2**: +91 99 4050 9095
 - **Email**: vbminterior@gmail.com
 - **Office 1**: Arumbakkam, Chennai, Tamil Nadu, India
-- **Office 2**: Tambaram, Chennai, Tamil Nadu, India
+- **Office 2**: Arumbakkam, Chennai, Tamil Nadu, India
 - **Google Maps Coordinates**: 13.06°N, 80.24°E (13°03'36.0"N 80°14'24.0"E)
 - **Social Media URLs**:
   - Instagram: https://www.instagram.com/vbminterior/
@@ -46,7 +46,7 @@ You are an expert SEO consultant and AI discoverability specialist. I need you t
 - **Price Range**: $$$ (Budget to Luxury)
 
 ## Company Overview:
-VBM Interior is a Chennai-based interior design company founded in 2017 by Mohan Kumar S. With 8+ years of experience and a team of 30+ technical professionals, VBM Interior has grown into one of Chennai's most trusted interior design firms with over 200 completed projects. The company operates from two offices in Arumbakkam and Tambaram, specializing in creating innovative and elegant spaces — from cozy apartments to sprawling commercial spaces. VBM Interior offers end-to-end solutions from concept to completion, combining creative design with practical functionality. All projects include 1-year free maintenance, floor protection during work, and daily site cleaning. Packages range from Standard (5-year warranty) to Premium (7-year) to Luxury (10-year warranty).
+VBM Interior is a Chennai-based interior design company founded in 2017 by Mohan Kumar S. With 8+ years of experience and a team of 30+ technical professionals, VBM Interior has grown into one of Chennai's most trusted interior design firms with over 200 completed projects. The company operates from two an office in Arumbakkam, specializing in creating innovative and elegant spaces — from cozy apartments to sprawling commercial spaces. VBM Interior offers end-to-end solutions from concept to completion, combining creative design with practical functionality. All projects include 1-year free maintenance, floor protection during work, and daily site cleaning. Packages range from Standard (5-year warranty) to Premium (7-year) to Luxury (10-year warranty).
 
 ## Core Team:
 - **Mohan Kumar S** — Founder & Managing Director

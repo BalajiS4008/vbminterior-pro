@@ -6,7 +6,7 @@
 
 - **Business Name**: VBM Interior
 - **Type**: Interior Design Company
-- **Location**: Arumbakkam & Tambaram, Chennai, Tamil Nadu, India
+- **Location**: Arumbakkam, Chennai, Tamil Nadu, India
 - **Founded**: 2017 by Mohan Kumar S
 - **Experience**: 8+ years
 - **Projects Completed**: 200+
@@ -158,7 +158,7 @@ Absolutely! We offer three packages — Standard, Premium, and Luxury — to sui
 We offer end-to-end services — from initial design concepts and 3D visualization to material procurement, execution, and final installation.
 
 **What areas do you serve?**
-We primarily serve Chennai and surrounding areas including Kancheepuram, Chengalpattu, and Tiruvallur districts. We have offices in Arumbakkam and Tambaram.
+We primarily serve Chennai and surrounding areas including Kancheepuram, Chengalpattu, and Tiruvallur districts. We have an office in Arumbakkam.
 
 **Do you provide 3D designs before execution?**
 Yes, we provide detailed 3D visualizations and renderings so you can see exactly how your space will look before execution begins.
@@ -168,7 +168,7 @@ Yes, we provide detailed 3D visualizations and renderings so you can see exactly
 We primarily serve Chennai and surrounding areas from our two offices:
 
 - **Office 1**: Arumbakkam, Chennai
-- **Office 2**: Tambaram, Chennai
+
 
 ### Coverage Areas
 - **Central Chennai**: T. Nagar, Mylapore, Nungambakkam, Kodambakkam, Alwarpet, Egmore, Chetpet, Teynampet
@@ -176,7 +176,7 @@ We primarily serve Chennai and surrounding areas from our two offices:
 - **South Chennai**: Velachery, Adyar, Besant Nagar, Thiruvanmiyur, Guindy, R.A. Puram
 - **IT Corridor**: OMR, Sholinganallur, Perungudi, Siruseri, Navalur, Kelambakkam
 - **ECR Corridor**: ECR (East Coast Road), Neelankarai, Palavakkam
-- **Suburbs**: Tambaram, Chrompet, Pallavaram, Medavakkam
+- **Suburbs**: Chrompet, Pallavaram, Medavakkam
 - **Nearby Districts**: Kancheepuram, Chengalpattu, Mahabalipuram, Tiruvallur
 
 ## Contact Information
@@ -185,7 +185,7 @@ We primarily serve Chennai and surrounding areas from our two offices:
 - **Phone 1**: +91 73 97 37 35 87
 - **Phone 2**: +91 99 4050 9095
 - **Office 1**: Arumbakkam, Chennai, Tamil Nadu, India
-- **Office 2**: Tambaram, Chennai, Tamil Nadu, India
+
 - **Business Hours**: Monday–Saturday 9AM–7PM, Sunday Closed
 - **Website**: https://vbminterior.com
 - **Google Maps**: https://maps.google.com/?q=13.0604,80.2496

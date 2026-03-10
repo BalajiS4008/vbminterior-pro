@@ -1,69 +1,107 @@
 const blogPosts = [
     {
-        slug: 'interior-design-trends-2024',
-        title: 'Interior Design Trends 2024',
-        excerpt: 'Discover the hottest interior design trends that are shaping homes this year. From sustainable materials to bold color choices.',
+        slug: 'interior-design-trends-2026',
+        title: 'Interior Design Trends 2026: What\'s Shaping Homes in Chennai',
+        excerpt: 'From warm minimalism and fluted textures to AI-driven design and earthy luxury — here are the top interior trends defining 2026 homes in Chennai and beyond.',
         author: 'VBM Interior',
-        date: 'Feb 15, 2026',
+        date: 'Mar 5, 2026',
         category: 'Trends',
-        readTime: '6 min read',
+        readTime: '8 min read',
         image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80',
         content: [
             {
                 type: 'paragraph',
-                text: 'The world of interior design is constantly evolving, with new trends emerging each year that reshape how we think about our living spaces. In 2024, we\'re seeing a fascinating blend of sustainability, technology, and timeless elegance that\'s transforming homes across the globe.'
+                text: 'Interior design in 2026 is all about intentional living — spaces that look stunning but also work effortlessly for your daily life. In Chennai and across India, homeowners are moving beyond cookie-cutter designs towards interiors that reflect personality, climate-consciousness, and smart functionality. Here are the trends our team at VBM Interior is seeing across 200+ completed projects.'
             },
             {
                 type: 'heading',
-                text: 'Sustainable Materials Take Center Stage'
+                text: '1. Warm Minimalism — Less Clutter, More Character'
             },
             {
                 type: 'paragraph',
-                text: 'One of the biggest shifts in 2024 is the move towards eco-friendly and sustainable materials. Homeowners are increasingly choosing recycled wood, bamboo flooring, and organic textiles. This isn\'t just about being environmentally conscious — these materials bring a natural warmth and authenticity to spaces that synthetic alternatives simply can\'t match.'
+                text: 'The cold, sterile minimalism of previous years is out. In 2026, "warm minimalism" blends clean lines with natural textures, warm wood tones, and earthy colour palettes. Think teak-toned modular kitchens, matte laminates in sand and mocha, and clutter-free storage that hides everything behind handleless shutters. It\'s minimal, but it feels like home — not a showroom.'
             },
             {
                 type: 'image',
                 src: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&q=80',
-                alt: 'Sustainable interior with natural materials',
-                caption: 'Natural materials bring warmth and authenticity to modern interiors'
+                alt: 'Warm minimalist living room with natural wood tones',
+                caption: 'Warm minimalism pairs clean lines with natural textures for a lived-in feel'
             },
             {
                 type: 'heading',
-                text: 'Bold Color Palettes Are Back'
+                text: '2. Fluted & Ribbed Textures Everywhere'
             },
             {
                 type: 'paragraph',
-                text: 'After years of minimalist whites and greys, 2024 welcomes the return of bold, saturated colors. Deep emerald greens, rich terracotta, and warm mustard yellows are making statements in living rooms and bedrooms. The key is balance — pairing these bold choices with neutral foundations to create spaces that feel both dramatic and livable.'
+                text: 'Fluted panels have gone from a niche detail to the defining texture of 2026 interiors. We\'re installing fluted wall panelling in TV unit backdrops, wardrobe shutters, pooja unit doors, and even kitchen islands. Whether in PVC, MDF, or solid wood, the vertical ribbed texture adds depth and a premium feel without heavy cost. Paired with concealed lighting, fluted panels create stunning visual impact.'
             },
             {
                 type: 'heading',
-                text: 'Curved Furniture and Organic Shapes'
+                text: '3. Earthy Luxury — Terracotta, Olive & Warm Neutrals'
             },
             {
                 type: 'paragraph',
-                text: 'Sharp angles are giving way to soft, organic curves. From rounded sofas to arched doorways and circular mirrors, curved elements add a sense of flow and comfort to interiors. This trend reflects a broader desire for spaces that feel welcoming and gentle, moving away from the rigid geometry of recent years.'
+                text: 'Bold neons are out; earthy luxury is in. The 2026 colour story is anchored by terracotta, sage green, warm taupe, and muted olive tones. These colours connect Chennai homes to nature while maintaining a premium look. We\'re using them in accent walls, soft furnishings, and even laminate selections — Century and Greenlam both launched dedicated earthy-tone collections this year.'
             },
             {
                 type: 'image',
                 src: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&q=80',
-                alt: 'Modern living room with curved furniture',
-                caption: 'Curved furniture creates a softer, more inviting atmosphere'
+                alt: 'Living room with earthy tones and natural textures',
+                caption: 'Earthy tones like terracotta and olive create warmth without overwhelming the space'
             },
             {
                 type: 'heading',
-                text: 'Smart Home Integration'
+                text: '4. Smart Storage That Disappears'
             },
             {
                 type: 'paragraph',
-                text: 'Technology continues to shape interior design, but in 2024, it\'s becoming more seamlessly integrated. Hidden speakers, smart lighting systems that adjust to natural circadian rhythms, and motorized window treatments are being designed to blend invisibly into the décor. The goal is technology that enhances comfort without disrupting aesthetics.'
+                text: 'With 2BHK and 3BHK apartments being the Chennai norm, smart storage is no longer optional — it\'s essential. The 2026 approach uses floor-to-ceiling wardrobes with lofts, under-bed hydraulic storage, pull-out pantry units in kitchens, and tandem drawer systems from Hettich and Ebco. The goal: every item has a place, and nothing is visible. Our Premium and Luxury packages now include soft-close mechanisms as standard.'
             },
             {
                 type: 'heading',
-                text: 'The VBM Approach'
+                text: '5. Integrated LED Lighting as Design'
             },
             {
                 type: 'paragraph',
-                text: 'At VBM Interior, we stay at the forefront of these trends while ensuring every design decision serves our clients\' unique lifestyles. Whether you\'re looking to incorporate sustainable materials, bold colors, or smart home features, our team of experienced designers can help you create a space that\'s both on-trend and timelessly beautiful.'
+                text: 'In 2026, lighting isn\'t just functional — it\'s architectural. Profile lights under floating TV units, warm LED strips behind fluted panels, backlit wardrobe interiors, and cove lighting in false ceilings are transforming how spaces feel after dark. The shift is away from heavy chandeliers towards diffused, layered lighting that creates mood and depth. We\'re recommending warm white (3000K) across Chennai homes for that golden, welcoming glow.'
+            },
+            {
+                type: 'heading',
+                text: '6. AI-Assisted Design & 3D Walkthroughs'
+            },
+            {
+                type: 'paragraph',
+                text: 'Design technology has leapt forward. At VBM Interior, our 3D Visual Artist Gandhi M now creates photo-realistic walkthroughs that let clients virtually tour their finished home before a single nail is hammered. AI tools help us explore hundreds of layout options, colour combinations, and material pairings in hours instead of weeks. This means fewer surprises and faster design finalization for our clients.'
+            },
+            {
+                type: 'image',
+                src: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80',
+                alt: '3D visualization of modern apartment interior',
+                caption: 'AI-powered 3D walkthroughs let you experience your home before construction begins'
+            },
+            {
+                type: 'heading',
+                text: '7. Climate-Conscious Materials for Chennai'
+            },
+            {
+                type: 'paragraph',
+                text: 'Chennai\'s humid, coastal climate demands materials that perform. In 2026, BWP (Boiling Water Proof) plywood is the baseline for kitchens and bathrooms — not a premium upgrade. We\'re using Greenply and Century BWP ply as standard, with marine-grade options for villas near ECR and OMR. Termite-treated frames, moisture-resistant laminates, and rust-proof hardware from Hettich\'s premium series ensure your interiors last 10+ years without warping or peeling.'
+            },
+            {
+                type: 'heading',
+                text: '8. Multi-Functional Spaces & Work-From-Home Zones'
+            },
+            {
+                type: 'paragraph',
+                text: 'The work-from-home shift is now permanent for many Chennai professionals. In 2026, we\'re designing dedicated study nooks within bedrooms, fold-away desks in living rooms, and dual-purpose guest rooms that serve as home offices. Acoustic wall panels, integrated cable management, and task lighting are now standard features in our 2BHK and 3BHK packages.'
+            },
+            {
+                type: 'heading',
+                text: 'The VBM Interior 2026 Approach'
+            },
+            {
+                type: 'paragraph',
+                text: 'At VBM Interior, every trend we adopt is filtered through one question: does it serve our client\'s real life? With 8+ years of experience, 200+ projects across Arumbakkam, Anna Nagar, and beyond, and a 30-member team led by founder Mohan Kumar S, we combine these 2026 trends with precise measurement, honest pricing, and on-time delivery. Whether you\'re choosing a Standard package starting at ₹3 lakhs or a Luxury finish with 10-year warranty — your home deserves interiors that are both beautiful and built to last.'
             },
         ]
     },
@@ -271,7 +309,7 @@ const blogPosts = [
             { type: 'heading', text: 'Budget Transparency Is Non-Negotiable' },
             { type: 'paragraph', text: 'The best interior designers in Chennai provide transparent pricing from day one. At VBM Interior, complete 2BHK interiors start from ₹3.5 lakhs, 3BHK from ₹5.5 lakhs, and 4BHK from ₹8 lakhs — with no hidden costs or surprise charges.' },
             { type: 'heading', text: 'Why VBM Interior Is Chennai\'s Top Choice' },
-            { type: 'paragraph', text: 'With 500+ completed projects across Adyar, Velachery, OMR, Porur, Tambaram, and every major Chennai neighborhood, VBM Interior has earned its reputation through consistent quality, on-time delivery, and genuine customer care. Book your free consultation today.' },
+            { type: 'paragraph', text: 'With 500+ completed projects across Adyar, Velachery, OMR, Porur, and every major Chennai neighborhood, VBM Interior has earned its reputation through consistent quality, on-time delivery, and genuine customer care. Book your free consultation today.' },
         ]
     },
     {
@@ -307,7 +345,7 @@ const blogPosts = [
         content: [
             { type: 'paragraph', text: 'Understanding interior design costs in Chennai helps you plan better and avoid budget surprises. This 2026 price guide breaks down costs by apartment type, room, and material grade — based on real project data from VBM Interior\'s 500+ completed projects.' },
             { type: 'heading', text: 'Complete Home Interior Costs' },
-            { type: 'paragraph', text: '2BHK apartments (800-1000 sq.ft) in areas like Velachery, Chromepet, and Tambaram: ₹3.5 to ₹6 lakhs. 3BHK homes (1200-1500 sq.ft) in Anna Nagar, Porur, and Mogappair: ₹5.5 to ₹10 lakhs. 4BHK/villas in Besant Nagar, ECR, and Adyar: ₹8 to ₹18 lakhs.' },
+            { type: 'paragraph', text: '2BHK apartments (800-1000 sq.ft) in areas like Velachery, and Chromepet: ₹3.5 to ₹6 lakhs. 3BHK homes (1200-1500 sq.ft) in Anna Nagar, Porur, and Mogappair: ₹5.5 to ₹10 lakhs. 4BHK/villas in Besant Nagar, ECR, and Adyar: ₹8 to ₹18 lakhs.' },
             { type: 'heading', text: 'Room-by-Room Cost Breakdown' },
             { type: 'paragraph', text: 'Living room design: ₹80,000 to ₹2.5 lakhs. Master bedroom with wardrobe: ₹1 to ₹3 lakhs. Modular kitchen: ₹1.5 to ₹5 lakhs. Study room: ₹50,000 to ₹1.5 lakhs. Bathroom renovation: ₹75,000 to ₹2 lakhs. Single room interior: from ₹75,000.' },
             { type: 'heading', text: 'What Affects the Cost?' },
